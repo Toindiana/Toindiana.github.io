@@ -32,7 +32,7 @@ h1 {
     padding: 20px 30px;
     border-radius: 10px;
     letter-spacing: 2px;
-    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-image: linear-gradient(to right, #228676 0%, #21c5e2 51%, #d8c13c 100%);
     background-size: 200% auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, .1);
     transition: .5s;
