@@ -743,6 +743,10 @@ nav {
    
 
     @media screen and (max-width:479px) {
+        body {
+            margin: 0 auto;
+            width: 184vw;
+        }
         main {
             display: none;
         }
