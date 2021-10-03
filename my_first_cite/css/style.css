@@ -297,6 +297,10 @@ nav {
     letter-spacing: 0;
     color: #3f495a;
 }
+
+.main_skills_mobile {
+    display: none;
+}
 /*что я умею*/
 
 
@@ -323,10 +327,14 @@ nav {
 }
 
 .cases_slider {
-    width: 1169px;
+    max-width: 1169px;
     height: 592px;
     background: rgba(76, 132, 204, 0.18);
     margin: 0 auto;
+}
+
+.cases_slider img {
+    max-width: 100%;
 }
 
 .cases_about_site {
@@ -733,5 +741,17 @@ nav {
         color: #ffffff;
     }
    
+
+    @media screen and (max-width:479px) {
+        main {
+            display: none;
+        }
+        .main_skills_mobile {
+            display: block;
+        }
+        .main_skills_mobile .skills_item_scroll {
+            overflow: scroll;
+        }
+    }
     
 
