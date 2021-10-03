@@ -1,0 +1,737 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a { 
+    text-decoration: none;    
+}
+
+.wrapp {
+    max-width: 1920px;
+    margin: 0 auto;    
+}
+
+main {
+    margin-bottom: -4px;
+}
+
+/*врехняя шапка*/
+nav {
+    background-color: #344051;
+    height: 61px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 23px;
+    display: inline-block;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.menu ul {
+    list-style-type: none;
+    width: 540px;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+/*врехняя шапка*/
+
+
+/*старт меню с фотографией*/
+.main_start {
+    background-image: url(../img/fone_main_start.png);
+    height: 1067px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main_start_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.main_start h1 {
+    margin: 0 0 29px 0;
+    font-size: 75px;
+    font-weight: 500;
+    color: #2c384a;
+    width: 530px;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.main_start p {
+    margin: 0 0 55px 0;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #79818d;
+}
+
+.main_start .form_container {
+    margin: 0 auto;
+    width: 251px;
+}
+
+.main_start form input {
+    border: 0.5px solid #6d7682;
+    border-radius: 5px;
+    padding: 0;
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #6d7682;
+}
+
+#about_me {
+    width: 95px;
+    height: 42px;
+    margin: 0 26px 0 0;
+}
+
+#my_works:hover {
+    border: 0.5px solid #fcfdfd;
+    background: #6d7682;
+    color: #fcfdfd;
+}
+
+#about_me:hover {
+    border: 0.5px solid #fcfdfd;
+    background: #6d7682;
+    color: #fcfdfd;
+}
+
+#my_works {
+    width: 126px;
+    height: 42px;
+    margin: 0;
+}
+
+.start_hello {
+    display: inline-block;
+    /* width: 530px; */
+}
+
+.strat_photo {
+    display: inline-block;
+    width: 826px;
+    /* height: 917px; */
+    margin-top: auto;
+    margin-bottom: 42px;
+    /* background-color: #fff; */
+}
+
+.strat_photo img {
+    width: 100%;
+    height: 100%;
+}
+/*старт меню с фотографией*/
+
+
+/*обо мне*/
+.main_about_me{
+    font-family: 'Arial';
+    background-color: #fcfdfd;
+    height: 730px;
+    margin-top: -45px;
+    padding-top: 108px;
+}
+
+.main_about_me h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 33px;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #263244;
+    text-transform: uppercase;
+}
+
+.orang_line {
+    width: 72px;
+    height: 4px;
+    background-color: #d17700;
+    margin: 30px auto 58px;
+}
+
+.main_about_me img {
+    display: block;
+    margin: 0 auto 22px;
+}
+
+.text_container {
+    width: 731px;
+    margin: 0 auto;
+    font-family: Calibri;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #3f495a;
+}
+
+#download_resume {
+    background: #fcfdfd 
+    url('../img/download_icon.png') 
+    no-repeat 5px center;
+    padding-left: 16px;
+    width: 157px;
+    height: 34px;
+    border: 0.5px solid #6f707e;
+    border-radius: 6px;
+
+    font-family: 'Arial';
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #6f707e;
+}
+
+#download_resume:hover {
+    background: #6f707e url('../img/download_icon.png') no-repeat 5px center;
+    color: #fcfdfd;
+}
+
+.main_about_me .form_container {
+    margin: 30px auto 0;
+    height: 34px;
+    width: 158px;
+}
+/*обо мне*/
+
+/*что я умею*/
+.main_skills {
+    background: url(../img/fon_skills.png);
+    height: 523px;
+    padding-top: 107px;
+    margin-bottom: 100px;
+}
+
+.main_skills .orang_line {
+    margin-bottom: 107px;
+}
+
+.main_skills h2 {
+    font-family: 'Arial';
+    margin: 0;
+    text-align: center;
+    font-size: 33px;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #263244;
+    text-transform: uppercase;
+}
+
+.skill_items_container {
+    width: 1090px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.skills_item {
+    width: 210px;
+}
+
+.skills_item h4 {
+    margin-bottom: 12px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.18);
+    font-family: Bahnschrift;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: #cf7600;
+}
+
+.skills_item img {
+    display: block;
+    margin: 0 auto 33px;
+}
+
+.skills_item p {
+    text-align: center;
+    font-family: Calibri;
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #3f495a;
+}
+/*что я умею*/
+
+
+/*кейсы*/
+.main_cases h2{
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 33.4px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #384354;
+}
+
+.main_cases p{
+    margin-bottom: 37px;
+    text-align: center;
+    font-family: Calibri;
+    font-size: 16.7px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #3f495a;
+}
+
+.cases_slider {
+    width: 1169px;
+    height: 592px;
+    background: rgba(76, 132, 204, 0.18);
+    margin: 0 auto;
+}
+
+.cases_about_site {
+    width: 1169px;
+    margin: 39px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about_site_block_right {
+    width: 894px;
+    padding-right: 45px;
+}
+
+.about_site_block_left h5 {
+    margin: 0 0 14px;
+    text-align: left;
+    font-family: 'Arial';
+    font-size: 25px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #384354;
+}
+
+.about_site_block_left p {
+    margin: 0 0 14px 0;
+    text-align: left;
+    font-family: Calibri;
+    font-size: 16.7px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #3f495a;
+}
+
+.about_site_block_right h6 {
+    margin: 0;
+    text-align: left;
+    font-family: 'Arial';
+    font-size: 25px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #384354;
+}
+
+.about_site_block_right p {
+    margin: 6px 0 0 0;
+    text-align: left;
+    font-family: Calibri;
+    font-size: 21px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #3f495a;
+}
+
+.cases_form {
+    width: 1169px;
+    margin: 0 auto;
+}
+
+.cases_form form input {
+    width: 201px;
+    height: 44px;
+    background-color: #63b5ae;
+    border-radius: 5px;
+
+    font-family: 'Arial';
+    font-size: 21px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #ffffff;
+}
+
+.cases_form form input:hover {
+    color: #63b5ae;
+    background: #ffffff;
+
+}
+/*кейсы*/
+
+
+/*расчет стоимости*/
+.main_price h2 {
+    margin-top: 200px;
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 46px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #1c2534;
+}
+
+.price_container {
+    width: 891px;
+    margin: 0 auto;
+}
+
+.price_container h6 {
+    margin: 0 0 22px 0;
+    font-family: 'Arial';
+    font-size: 29px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #1c2534;
+}
+
+.price_container select {
+    margin-bottom: 44px;
+    width: 891px;
+    height: 57px;
+    font-family: 'Arial';
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #737373;
+    background: #eeeeee;
+} 
+
+.term {
+    margin-bottom: 10px;
+}
+
+.term, .price p{
+    display: inline-block;
+    font-family: 'Arial';
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #384354;
+}
+
+.term, .price  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*расчет стоимости*/
+
+/*статистика*/
+.statistics {
+    margin-top: 98px;
+    padding-top: 100px;
+    height: 499px;
+    background: url(../img/fon_statistic.png);
+}
+
+.statistics h2 {
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 33px;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #323e4f;
+}
+
+.statistics_container {
+    width: 1025px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.statistics_item {
+    width: 170px;
+}
+
+.statistics_item img {
+    display: block;
+    margin: 0 auto 32px;
+}
+
+.statistics_item h3, .statistics_item p {
+    text-align: center;
+}
+
+.statistics_item h3 {
+    margin-bottom: 32px;
+    font-family: Impact;
+    font-size: 37.5px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #323e4f;
+}
+
+.statistics_item p {
+    font-family: 'Arial';
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+/*статистика*/
+
+/*отзывы*/
+.comment h2, .comment p {
+    text-align: center;
+}
+
+.comment img {
+    display: block;
+    margin: 0 auto 33px;
+}
+
+.comment h2 {
+    margin-top: 104px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #243042;
+}
+
+.comment p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #243042;
+}
+
+.comment_text {
+    margin: 0 auto;
+    width: 688px;
+}
+
+.list_comment {
+    width: 75px;
+    margin: 48px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment_on {
+    width: 10px;
+    height: 10px;
+    background: #c96500;
+    border-radius: 50%;
+}
+
+.comment_off {
+    width: 10px;
+    height: 10px;
+    background: #d3d6da;
+    border-radius: 50%;
+}
+
+.list_comment a {
+    width: 100%;
+    height: 100%;
+    color: rgba(255,255,255,0);
+}
+/*отзывы*/
+
+/*контакты*/
+    .main_contacts {
+        background: url(../img/fon_contacts.png) center no-repeat;
+        margin-bottom: 0px;
+        margin-top: 91px;
+        padding-top: 105px;
+        height: 808px;
+    }
+
+    .main_contacts .orang_line {
+        margin-bottom: 30px;
+    }
+
+    .main_contacts h2 {
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 33px;
+        font-weight: 500;
+        letter-spacing: 0;
+        color: #ffffff;
+    }
+
+    .main_contacts p {
+        text-align: center;
+        font-family: Calibri;
+        font-size: 17px;
+        line-height: 1.2;
+        font-weight: 400;
+        letter-spacing: 0;
+        color: #ffffff;
+    }
+
+    .contacts_items_container {
+        width: 670px;
+        margin: 45px auto 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .contacts_items img {
+        display: block;
+        margin: 0 auto 12px;
+    }
+
+    .contacts_form_container {
+        width: 732px;
+        margin: 0 auto;
+    }
+
+    .contacts_form_container h3 {
+        margin-top: 37px;
+        margin-bottom: 43px;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 21px;
+        font-weight: 500;
+        letter-spacing: 0;
+        color: #ffffff;
+    }
+    
+    .contacts_form_container input {
+        width: 352px;
+        padding-left: 5px;
+        height: 34px;
+        background: rgba(255, 255, 255, 69%);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: 0;
+        color: #5d5d5e;
+    }
+
+    .contacts_form_container input[type=text] {
+        margin-right: 23px;
+    }
+
+    .contacts_form_container textarea {
+        margin-top: 14px;
+        padding: 5px;
+        width: 730px;
+        height: 94px;
+        background: rgba(255, 255, 255, 69%);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: 0;
+        color: #5d5d5e;
+    }
+
+    .contacts_form_container input[type=submit] {
+        width: 125px;
+        height: 46px;
+        border: 0.5px solid #f9faff;
+        border-radius: 5px;
+        background: rgba(255,255,255,0);    
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 21px;
+        font-weight: 500;
+        letter-spacing: 0;
+        color: #ffffff;
+        display: block;
+        margin: 28px auto 0;
+    }
+
+    .contacts_form_container input[type=submit]:hover {
+        background: #ffffff;
+        color: #5d5d5e;
+    }
+
+    .contacts_social_networks {
+        width: 420px;
+        margin: 36px auto 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contacts_social_networks a {
+        display: block;
+    }
+
+    .contacts_social_networks a:hover {
+        background: #abcbee;
+    }
+ /*контакты*/   
+
+    footer {
+        padding-top: 41px;
+        height: 96px;
+        background: #354051;
+    }
+
+    footer p {
+        margin: 0;
+        text-align: center;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0;
+        color: #ffffff;
+    }
+   
+    
+
