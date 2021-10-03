@@ -745,7 +745,7 @@ nav {
     @media screen and (max-width:479px) {
         body {
             margin: 0 auto;
-            width: 184vw;
+            width: 100vw;
         }
         main {
             display: none;
