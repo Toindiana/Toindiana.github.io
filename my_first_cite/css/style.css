@@ -801,6 +801,26 @@ nav {
         .mobile .main_start {
             height: 100%;
         }
+
+        .mobile .main_start input[type=submit]{
+            border: 0.5px solid #6d7682;
+            border-radius: 5px;
+            padding: 0;
+            font-size: 19px;
+            font-weight: 500;
+            letter-spacing: 0;
+            color: #6d7682;
+        }
+        #mobile_about_me{
+            width: 95px;
+            height: 42px;
+            margin: 0 26px 0 0;
+        }
+        #mobile_my_works {
+            width: 120px;
+            height: 42px;
+            margin: 0;
+        }
         /*старт меню с фотографией*/
 
         /*что я умею*/
