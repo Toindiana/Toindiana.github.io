@@ -813,6 +813,7 @@ nav {
             width: 120px;
             height: 42px;
             margin-right: 3px;
+            background: rgba(255, 255, 255, 1);
         }
 /*         #mobile_about_me{
             width: 95px;
