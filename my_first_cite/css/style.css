@@ -13,8 +13,16 @@ a {
     margin: 0 auto;    
 }
 
-main {
+.desktop {
     margin-bottom: -4px;
+}
+
+.mobile {
+    display: none;
+}
+
+.menu_mobile {
+    display: none;
 }
 
 /*врехняя шапка*/
@@ -296,10 +304,6 @@ nav {
     font-weight: 400;
     letter-spacing: 0;
     color: #3f495a;
-}
-
-.main_skills_mobile {
-    display: none;
 }
 /*что я умею*/
 
@@ -743,18 +747,144 @@ nav {
    
 
     @media screen and (max-width:479px) {
+
         html, body {
             overflow-x: hidden;
         }
-        main {
+        .desktop {
             display: none;
         }
-        .main_skills_mobile {
+        .mobile {
             display: block;
         }
-        .main_skills_mobile .skills_item_scroll {
+        .logo {
+            margin-right: 15px;
+        }        
+        .item_scroll {
             overflow: scroll;
         }
-    }
-    
+        .menu {
+            display: none;
+        }
+        .menu_mobile {
+            display: inline-block;
+        }
+        .menu_mobile a{
+            color: #ffffff;
+            font-weight: 500;
+            font-size: 23px;
+        }
 
+        /*старт меню с фотографией*/
+        .mobile .main_start_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+            height: 100%;
+            flex-direction: column;
+        }
+
+        .mobile .start_hello {
+            display: inline-block;
+            margin-top: 20px;
+            margin-bottom: 80px;
+        }
+
+        .mobile .strat_photo{
+            display: inline-block;
+            width: 80%;
+            margin: 0 auto 20px;
+        }
+
+        .mobile .main_start {
+            height: 100%;
+        }
+        /*старт меню с фотографией*/
+
+        /*что я умею*/
+        .mobile .main_skills {
+            margin-bottom: -140px;
+        }
+        /*что я умею*/
+
+        /*расчет стоимости*/
+        .mobile .price_container {
+            width: 90%;
+        }
+        .mobile .price_container select {
+            width: 100%;
+        }
+        .mobile .main_price h2 {
+            margin-bottom: 40px;
+        }
+        .mobile .main_price {
+            margin-bottom: 20px;
+        }
+        /*расчет стоимости*/
+
+        /*контакты*/
+        .mobile .main_contacts {
+            padding-top: 35px;
+            margin-bottom: 20px;
+            height: 808px;
+        }
+        .mobile .contacts_items_container {
+            width: 100%;
+            margin: 45px auto 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .mobile .contacts_items {
+            margin-bottom: 25px;
+        }
+        .mobile .contacts_form_container {
+            width: 95%;
+        }
+        .mobile .contacts_form_container h3 {
+            margin: 25px 0 20px;
+        }
+        .mobile .contacts_form_container textarea {
+            width: 100%;
+        }
+        .mobile .contacts_form_container input[type=text] {
+            margin-bottom: 10px;
+        }
+        .mobile .contacts_form_container input[type=submit] {
+            margin: 5px auto 0;
+        }
+        /*контакты*/
+    }
+   
+.menu_mobile_list{
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #344051;    
+    transition: 5s ease max-height;
+}
+.menu_mobile_list--show {
+    max-height: 250px;
+}    
+.mobile_list_container {
+    display: inline-block;
+}
+.mobile_list_container ul li{
+    list-style-type: none;
+    margin-top: 15px;
+}
+.mobile_list_container ul li:nth-child(6){
+    margin-bottom: 15px;
+}
+.mobile_list_container ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
