@@ -810,8 +810,11 @@ nav {
             font-weight: 500;
             letter-spacing: 0;
             color: #6d7682;
+            width: 120px;
+            height: 42px;
+            margin-right: 3px;
         }
-        #mobile_about_me{
+/*         #mobile_about_me{
             width: 95px;
             height: 42px;
             margin: 0 26px 0 0;
@@ -820,7 +823,7 @@ nav {
             width: 120px;
             height: 42px;
             margin: 0;
-        }
+        } */
         /*старт меню с фотографией*/
 
         /*что я умею*/
