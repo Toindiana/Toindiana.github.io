@@ -754,8 +754,13 @@ nav {
         .desktop {
             display: none;
         }
+        nav {
+            position: fixed;
+            width: 100%;
+        }
         .mobile {
             display: block;
+            margin-top: 61px;
         }
         .logo {
             margin-right: 15px;
@@ -769,7 +774,7 @@ nav {
         .menu_mobile {
             display: inline-block;
         }
-        .menu_mobile a{
+        .menu_mobile p{
             color: #ffffff;
             font-weight: 500;
             font-size: 23px;
@@ -815,16 +820,6 @@ nav {
             margin-right: 3px;
             background: rgba(255, 255, 255, 0);
         }
-/*         #mobile_about_me{
-            width: 95px;
-            height: 42px;
-            margin: 0 26px 0 0;
-        }
-        #mobile_my_works {
-            width: 120px;
-            height: 42px;
-            margin: 0;
-        } */
         /*старт меню с фотографией*/
 
         /*что я умею*/
@@ -882,15 +877,20 @@ nav {
         }
         /*контакты*/
     }
-   
+
+
+   /*всплывающее мобильное меню*/
 .menu_mobile_list{
+    position: fixed;
+    top: 61px;
+    width: 100%;
     max-height: 0;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #344051;    
-    transition: 5s ease max-height;
+    background: rgba(52, 64, 81, 0.9);
+    transition: 1s ease max-height;
 }
 .menu_mobile_list--show {
     max-height: 250px;
@@ -912,3 +912,4 @@ nav {
     font-weight: 500;
     text-transform: uppercase;
 }
+/*всплывающее мобильное меню*/
