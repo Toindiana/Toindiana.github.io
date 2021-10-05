@@ -851,8 +851,8 @@ nav {
         /*контакты*/
         .mobile .main_contacts {
             padding-top: 35px;
-            margin-bottom: 20px;
-            height: 808px;
+            height: 840px;
+            background: url(../img/fon_contacts.png) 50%/cover no-repeat;
         }
         .mobile .contacts_items_container {
             width: 100%;
