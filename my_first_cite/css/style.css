@@ -849,6 +849,7 @@ nav {
             height: 840px;
             background: url(../img/fon_contacts.png) 50%/cover no-repeat;
             background-attachment: fixed;
+            background-size: cover;
         }
         .mobile .contacts_items_container {
             width: 100%;
