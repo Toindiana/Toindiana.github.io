@@ -1,0 +1,133 @@
+body {
+  font-family: "Roboto", sans-serif;
+  /* background-color: #621402; */
+  background: url("../img/bg.png") 50% /auto 100% fixed no-repeat;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-top: 31px;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0 0 0 57px;
+}
+
+.menu .link {
+  margin-right: 25px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.menu .link:hover {
+  text-decoration: underline;
+}
+
+.avatar {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+}
+
+.user {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.hello_user {
+  color: #fff;
+  margin-right: 11px;
+  font-size: 16px;
+}
+
+/*информация о фильме*/
+.about_film {
+  height: 422px;
+  margin-top: 92px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.about_film_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.about_film_wrapper .text {
+  width: 570px;
+  margin-right: 330px;
+}
+
+.about_film_wrapper .text h2 {
+  font-size: 24px;
+  line-height: 150%;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.about_film_wrapper .text h1 {
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+}
+
+.about_film_wrapper .text p {
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.play:hover {
+  opacity: 0.75;
+}
+
+.film_information {
+  display: flex;
+  width: 255px;
+}
+
+.film_information p {
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  margin-right: 34px;
+}
+
+.time img {
+  width: 20px;
+  height: 20px;
+  margin-right: 14px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating img {
+  width: 35px;
+  height: 18px;
+  margin-right: 12px;
+}
+
+.rating span {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+}
+/*информация о фильме*/
