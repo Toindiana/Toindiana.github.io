@@ -14,26 +14,27 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Кинотеатр</title>
   </head>
+
   <body>
-    <header class="header container">
-      <a href="/" class="logo">
-        <img src="img/logo.png" alt="тут лого" />
-      </a>
-      <nav class="nav">
-        <ul class="menu">
-          <li><a class="link" href="#">Главная</a></li>
-          <li><a class="link" href="#">Фильмы</a></li>
-          <li><a class="link" href="#">Кинотеатры</a></li>
-          <li><a class="link" href="#">События</a></li>
-          <li><a class="link" href="#">Поддержка</a></li>
-        </ul>
-      </nav>
-      <div class="user">
-        <span class="hello_user">Привет, Саня</span>
-        <img src="img/avatar.jpg" alt="аватарка" class="avatar" />
+    <header class="header">
+      <div class="navbar container">
+        <a href="/" class="logo">
+          <img src="img/logo.png" alt="тут лого" />
+        </a>
+        <nav class="nav">
+          <ul class="menu">
+            <li><a class="link" href="#">Главная</a></li>
+            <li><a class="link" href="#">Фильмы</a></li>
+            <li><a class="link" href="#">Кинотеатры</a></li>
+            <li><a class="link" href="#">События</a></li>
+            <li><a class="link" href="#">Поддержка</a></li>
+          </ul>
+        </nav>
+        <div class="user">
+          <span class="hello_user">Привет, Саня</span>
+          <img src="img/avatar.jpg" alt="аватарка" class="avatar" />
+        </div>
       </div>
-    </header>
-    <main>
       <!-- информация о фильме -->
       <div class="about_film container">
         <div class="about_film_wrapper">
@@ -67,7 +68,65 @@
         </div>
       </div>
       <!-- информация о фильме -->
-    </main>
+      <div class="session container">
+        <!-- <div class="session-label">
+          <span class="label-date">Дата</span>
+          <span class="label-cinema">Кинотеатр</span>
+          <span class="label-time">Время</span>
+        </div> -->
+
+        <div class="session-date">
+          <span class="session-label">Дата</span>
+          <div class="session-block">
+            <div class="session-date-items">
+              <span class="date-items-mounth">АПР</span>
+              <span class="date-items-day">27</span>
+              <span class="date-items-week">Пт</span>
+            </div>
+            <div class="session-date-items">
+              <span class="date-items-mounth">АПР</span
+              ><span class="date-items-day">28</span
+              ><span class="date-items-week">Сб</span>
+            </div>
+            <div class="session-date-items">
+              <span class="date-items-mounth">АПР</span
+              ><span class="date-items-day">29</span
+              ><span class="date-items-week">Вс</span>
+            </div>
+            <div class="session-date-items">
+              <span class="date-items-mounth">АПР</span
+              ><span class="date-items-day">30</span
+              ><span class="date-items-week">Пн</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="session-cinema">
+          <span class="session-label">Кинотеатр</span>
+          <select class="select-cinema" name="select-cinema">
+            <option selected disabled>Выберите кинотеатр</option>
+            <option value="Октябрь, ул. Калужская 28">
+              Октябрь, ул. Калужская 28
+            </option>
+            <option value="Полярный, ул. Ферсмана 15">
+              Полярный, ул. Ферсмана 15
+            </option>
+            <option value="Большевик, ул. Кирова 8">
+              Большевик, ул. Кирова 8
+            </option>
+          </select>
+        </div>
+        <div class="session-time">
+          <span class="session-label">Время</span>
+          <select class="select-time" name="select-cinema">
+            <option selected disabled>Выберите время</option>
+            <option value="15:00">15:00</option>
+            <option value="17:00">17:00</option>
+            <option value="20:30">20:30</option>
+          </select>
+        </div>
+      </div>
+    </header>
 
     <!-- для прокрутки -->
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
