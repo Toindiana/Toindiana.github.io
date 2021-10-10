@@ -182,6 +182,10 @@ body {
   background: #fe8e05;
   color: #621402;
 }
+.date-items-activity {
+  background: #fe8e05;
+  color: #621402;
+}
 .date-items-mounth {
   font-size: 16px;
   line-height: 19px;
@@ -195,7 +199,7 @@ body {
   font-size: 19px;
   line-height: 22px;
 }
-select{
+select {
   cursor: pointer;
 }
 .select-cinema {
@@ -218,4 +222,80 @@ select{
   line-height: 150%;
   color: #fff;
 }
-/*выбор даты, времени и кинотеатра*
+/*выбор даты, времени и кинотеатра*/
+
+.hall {
+  margin-bottom: 62px;
+}
+.hall path:not(.screen_light, .svg_legends) {
+  cursor: pointer;
+  fill: rgba(255, 255, 255, 0);
+}
+.booked {
+  fill: rgba(255, 255, 255, 0.05);
+  opacity: 0.3;
+}
+path.booked:hover:not(.svg_legends) {
+  cursor: not-allowed;
+}
+.hall path.activity {
+  fill: rgba(254, 142, 5, 1);
+}
+.hall path.activity_legends {
+  fill: rgba(254, 142, 5, 1);
+}
+.legends_seats {
+  height: 85px;
+  background: rgba(36, 36, 36, 0.18);
+  margin-top: -4px;
+}
+.legends_seats_block {
+  width: 1018px;
+  margin: 0 auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: start;
+}
+.legends_hall {
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.legends_hall svg {
+  margin-right: 17px;
+}
+.price_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price {
+  display: flex;
+  flex-direction: column;
+}
+.price_text {
+  font-size: 18px;
+  line-height: 21px;
+}
+.price_sum {
+  margin-top: 12px;
+  font-size: 52px;
+  line-height: 61px;
+}
+.price_total {
+  margin-right: 15px;
+}
+.pay_button {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  padding: 24px 52px;
+  background: rgba(254, 142, 5, 1);
+  border-radius: 5px;
+}
+.pay_button:hover {
+  color: rgba(98, 20, 2, 1);
+}
