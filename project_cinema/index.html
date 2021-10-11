@@ -12,6 +12,10 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
     <title>Кинотеатр</title>
   </head>
 
@@ -22,6 +26,43 @@
           <img src="img/logo.png" alt="тут лого" />
         </a>
         <nav class="nav">
+          <svg
+            class="nav_svg"
+            width="32"
+            height="25"
+            viewBox="0 0 32 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="2.5"
+              y1="2.5"
+              x2="29.5"
+              y2="2.5"
+              stroke="#F5E3E3"
+              stroke-width="5"
+              stroke-linecap="round"
+            />
+            <line
+              x1="2.5"
+              y1="12.5"
+              x2="29.5"
+              y2="12.5"
+              stroke="#F5E3E3"
+              stroke-width="5"
+              stroke-linecap="round"
+            />
+            <line
+              x1="2.5"
+              y1="22.5"
+              x2="29.5"
+              y2="22.5"
+              stroke="#F5E3E3"
+              stroke-width="5"
+              stroke-linecap="round"
+            />
+          </svg>
+
           <ul class="menu">
             <li><a class="link" href="#">Главная</a></li>
             <li><a class="link" href="#">Фильмы</a></li>
@@ -53,7 +94,7 @@
             </p>
           </div>
           <div class="play">
-            <input type="image" src="img/play-button.png" alt="" />
+            <input data-fancybox="video-gallery" data-src="https://www.youtube.com/watch?v=FeJKZMFJ7NA" type="image" src="img/play-button.png" alt="" />
           </div>
         </div>
         <div class="film_information">
@@ -125,8 +166,6 @@
     <div class="hall container">
       <svg
         class="hall_svg"
-        width="1170"
-        height="686"
         viewBox="0 0 1170 597"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -1264,91 +1303,86 @@
             <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
           </linearGradient>
         </defs>
-        <div class="legends_seats container">
-          <div class="legends_seats_block">
-            <div class="legends_hall">
-              <svg
-                width="38"
-                height="32"
-                viewBox="0 0 38 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  class="svg_legends"
-                  d="M0.5 24.5C0.5 24.5256 0.500983 24.5512 0.502946 24.5767C0.596348 25.7909 1.03676 27.5963 2.08794 29.1283C3.16579 30.6991 4.90875 32 7.5 32H30C30.0238 32 30.0475 31.9992 30.0712 31.9975C31.3985 31.9027 33.3511 31.3731 34.9956 30.0716C36.6806 28.7381 38 26.6218 38 23.5V14H36V23.5C36 25.9782 34.986 27.5286 33.7544 28.5034C32.4964 29.499 30.9694 29.9212 29.9627 30H7.5C5.69125 30 4.51754 29.1342 3.73706 27.9967C2.94021 26.8354 2.57957 25.4126 2.5 24.46V14H0.5V24.5ZM27 1H11C7.68629 1 5 3.68629 5 7V20C5 23.3137 7.68629 26 11 26H27C30.3137 26 33 23.3137 33 20V7C33 3.68629 30.3137 1 27 1Z"
-                  stroke="white"
-                  stroke-opacity="0.2"
-                  stroke-width="2"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <span>Свободно</span>
-            </div>
-            <!-- свободно -->
-
-            <div class="legends_hall">
-              <svg
-                width="38"
-                height="32"
-                viewBox="0 0 38 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  class="activity_legends svg_legends"
-                  d="M0.5 24.5C0.5 24.5256 0.500983 24.5512 0.502946 24.5767C0.596348 25.7909 1.03676 27.5963 2.08794 29.1283C3.16579 30.6991 4.90875 32 7.5 32H30C30.0238 32 30.0475 31.9992 30.0712 31.9975C31.3985 31.9027 33.3511 31.3731 34.9956 30.0716C36.6806 28.7381 38 26.6218 38 23.5V14H36V23.5C36 25.9782 34.986 27.5286 33.7544 28.5034C32.4964 29.499 30.9694 29.9212 29.9627 30H7.5C5.69125 30 4.51754 29.1342 3.73706 27.9967C2.94021 26.8354 2.57957 25.4126 2.5 24.46V14H0.5V24.5ZM27 1H11C7.68629 1 5 3.68629 5 7V20C5 23.3137 7.68629 26 11 26H27C30.3137 26 33 23.3137 33 20V7C33 3.68629 30.3137 1 27 1Z"
-                  stroke="white"
-                  stroke-opacity="0.2"
-                  stroke-width="2"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <span>Выбрано</span>
-            </div>
-            <!-- выбрано -->
-
-            <div class="legends_hall">
-              <svg
-                width="38"
-                height="32"
-                viewBox="0 0 38 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  class="booked svg_legends"
-                  d="M0.5 24.5C0.5 24.5256 0.500983 24.5512 0.502946 24.5767C0.596348 25.7909 1.03676 27.5963 2.08794 29.1283C3.16579 30.6991 4.90875 32 7.5 32H30C30.0238 32 30.0475 31.9992 30.0712 31.9975C31.3985 31.9027 33.3511 31.3731 34.9956 30.0716C36.6806 28.7381 38 26.6218 38 23.5V14H36V23.5C36 25.9782 34.986 27.5286 33.7544 28.5034C32.4964 29.499 30.9694 29.9212 29.9627 30H7.5C5.69125 30 4.51754 29.1342 3.73706 27.9967C2.94021 26.8354 2.57957 25.4126 2.5 24.46V14H0.5V24.5ZM27 1H11C7.68629 1 5 3.68629 5 7V20C5 23.3137 7.68629 26 11 26H27C30.3137 26 33 23.3137 33 20V7C33 3.68629 30.3137 1 27 1Z"
-                  stroke="white"
-                  stroke-opacity="0.2"
-                  stroke-width="2"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <span>Занято</span>
-            </div>
-            <!-- занято -->
-          </div>
-        </div>
       </svg>
+      <div class="legends_seats container">
+        <div class="legends_seats_block">
+          <div class="legends_hall">
+            <svg
+              width="38"
+              height="32"
+              viewBox="0 0 38 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="svg_legends"
+                d="M0.5 24.5C0.5 24.5256 0.500983 24.5512 0.502946 24.5767C0.596348 25.7909 1.03676 27.5963 2.08794 29.1283C3.16579 30.6991 4.90875 32 7.5 32H30C30.0238 32 30.0475 31.9992 30.0712 31.9975C31.3985 31.9027 33.3511 31.3731 34.9956 30.0716C36.6806 28.7381 38 26.6218 38 23.5V14H36V23.5C36 25.9782 34.986 27.5286 33.7544 28.5034C32.4964 29.499 30.9694 29.9212 29.9627 30H7.5C5.69125 30 4.51754 29.1342 3.73706 27.9967C2.94021 26.8354 2.57957 25.4126 2.5 24.46V14H0.5V24.5ZM27 1H11C7.68629 1 5 3.68629 5 7V20C5 23.3137 7.68629 26 11 26H27C30.3137 26 33 23.3137 33 20V7C33 3.68629 30.3137 1 27 1Z"
+                stroke="white"
+                stroke-opacity="0.2"
+                stroke-width="2"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span>Свободно</span>
+          </div>
+          <!-- свободно -->
+
+          <div class="legends_hall">
+            <svg
+              width="38"
+              height="32"
+              viewBox="0 0 38 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="activity_legends svg_legends"
+                d="M0.5 24.5C0.5 24.5256 0.500983 24.5512 0.502946 24.5767C0.596348 25.7909 1.03676 27.5963 2.08794 29.1283C3.16579 30.6991 4.90875 32 7.5 32H30C30.0238 32 30.0475 31.9992 30.0712 31.9975C31.3985 31.9027 33.3511 31.3731 34.9956 30.0716C36.6806 28.7381 38 26.6218 38 23.5V14H36V23.5C36 25.9782 34.986 27.5286 33.7544 28.5034C32.4964 29.499 30.9694 29.9212 29.9627 30H7.5C5.69125 30 4.51754 29.1342 3.73706 27.9967C2.94021 26.8354 2.57957 25.4126 2.5 24.46V14H0.5V24.5ZM27 1H11C7.68629 1 5 3.68629 5 7V20C5 23.3137 7.68629 26 11 26H27C30.3137 26 33 23.3137 33 20V7C33 3.68629 30.3137 1 27 1Z"
+                stroke="white"
+                stroke-opacity="0.2"
+                stroke-width="2"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span>Выбрано</span>
+          </div>
+          <!-- выбрано -->
+
+          <div class="legends_hall">
+            <svg
+              width="38"
+              height="32"
+              viewBox="0 0 38 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="booked svg_legends"
+                d="M0.5 24.5C0.5 24.5256 0.500983 24.5512 0.502946 24.5767C0.596348 25.7909 1.03676 27.5963 2.08794 29.1283C3.16579 30.6991 4.90875 32 7.5 32H30C30.0238 32 30.0475 31.9992 30.0712 31.9975C31.3985 31.9027 33.3511 31.3731 34.9956 30.0716C36.6806 28.7381 38 26.6218 38 23.5V14H36V23.5C36 25.9782 34.986 27.5286 33.7544 28.5034C32.4964 29.499 30.9694 29.9212 29.9627 30H7.5C5.69125 30 4.51754 29.1342 3.73706 27.9967C2.94021 26.8354 2.57957 25.4126 2.5 24.46V14H0.5V24.5ZM27 1H11C7.68629 1 5 3.68629 5 7V20C5 23.3137 7.68629 26 11 26H27C30.3137 26 33 23.3137 33 20V7C33 3.68629 30.3137 1 27 1Z"
+                stroke="white"
+                stroke-opacity="0.2"
+                stroke-width="2"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span>Занято</span>
+          </div>
+          <!-- занято -->
+        </div>
+      </div>
     </div>
     <div class="price_block container">
       <div class="price">
         <div class="price_text"><span>Всего к оплате</span></div>
         <div class="price_sum">
-          <span class="price_total">0</span><span class="valuta">₽</span>
+          <span class="price_total">0</span
+          ><span class="valuta"> &#8381; </span>
         </div>
       </div>
       <a href="#" class="pay_button">Перейти к оплате</a>
     </div>
 
-    <!-- для прокрутки -->
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <!-- для прокрутки -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,5 +1,8 @@
 const hallSvg = document.querySelector('.hall_svg');
 const totalPriceTag = document.querySelector('.price_total');
+const menu_click = document.querySelector(".nav_svg");
+const menu = document.querySelector(".menu");
+
 
 let cost = 400;
 let TotalPrice = 0;
@@ -25,3 +28,9 @@ function take(a) {
     day.classList.toggle("date-items-activity");
     day.classList.toggle("day_activity");
 }
+
+function open_menu() {
+    menu.classList.toggle("menu_open")
+}
+
+menu_click.addEventListener("click", open_menu);

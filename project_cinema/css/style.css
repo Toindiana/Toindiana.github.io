@@ -15,16 +15,19 @@ body {
 }
 
 .header {
-  min-height: 100vh;
   background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%),
     url(../img/bg.png) no-repeat center top/cover;
-  margin-bottom: 0;
+  margin-bottom: 60px;
 }
 
 .navbar {
   display: flex;
   align-items: center;
   padding-top: 31px;
+}
+
+.nav_svg {
+  display: none;
 }
 
 .menu {
@@ -106,7 +109,7 @@ body {
 
 .film_information {
   display: flex;
-  width: 255px;
+  justify-content: start;
   margin-top: 53px;
 }
 
@@ -176,7 +179,6 @@ body {
   border-radius: 5px;
   padding: 9px 27px;
   margin-right: 15px;
-  transition: background 0.2s;
 }
 .session-date-items:hover {
   background: #fe8e05;
@@ -250,11 +252,12 @@ path.booked:hover:not(.svg_legends) {
   margin-top: -4px;
 }
 .legends_seats_block {
-  width: 1018px;
+  width: 100%;
   margin: 0 auto;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   display: flex;
   justify-content: start;
+  padding-left: 15px;
 }
 .legends_hall {
   margin-top: 22px;
@@ -298,4 +301,118 @@ path.booked:hover:not(.svg_legends) {
 }
 .pay_button:hover {
   color: rgba(98, 20, 2, 1);
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+  .session {
+    flex-wrap: wrap;
+  }
+  .session-date {
+    order: 1;
+  }
+  .session-cinema {
+    order: 3;
+    margin-top: 20px;
+  }
+  .session-time {
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+  .about_film_wrapper {
+    flex-direction: column;
+  }
+  .about_film_wrapper .play {
+    margin-top: 25px;
+  }
+  .film_information {
+    justify-content: center;
+  }
+  .session-cinema {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 350px;
+  }
+  .header {
+    background: linear-gradient(
+        180deg,
+        rgba(98, 20, 2, 0.31) 0%,
+        #621402 85.62%
+      ),
+      url(../img/bg-small.png) no-repeat 3% top/cover;
+  }
+  .menu {
+    z-index: 2;
+    background: rgba(98, 20, 2, 0.9);
+    position: absolute;
+    top: 72px;
+    left: 57px;
+    margin: 0;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+  }
+  .menu_open {
+    visibility: visible;
+    opacity: 1;
+  }
+  .menu li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .menu .link {
+    font-size: 18px;
+  }
+  .nav_svg {
+    display: block;
+    margin-left: 25px;
+    height: 30px;
+    width: 35px;
+    cursor: pointer;
+  }
+  .select-cinema {
+    min-width: 60%;
+  }
+  .session {
+    justify-content: center;
+  }
+  .session-date-items:last-child {
+    display: none;
+  }
+  .session-label {
+    display: none;
+  }
+  .session-time {
+    margin: 20px 0;
+  }
+  .legends_hall svg {
+    width: 20px;
+  }
+  .legends_seats {
+    height: 100%;
+  }
+  .legends_seats_block {
+    flex-direction: column;
+    align-items: start;
+  }
+  .price_sum {
+    font-size: 35px;
+  }
+  .pay_button {
+    padding: 10px 15px;
+    border-radius: 15px;
+  }
 }
