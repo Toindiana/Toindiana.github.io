@@ -1,1 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>my_first_city_bootstrap</title>
+  </head>
 
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="px-0 col-lg-3 col-md-4">
+            <div class="logo"><span class="logo_text">Саня Яковенко</span></div>
+          </div>
+          <div class="px-0 col-lg-5 offset-lg-4 col-md-6 offset-md-2">
+            <ul class="menu">
+              <li><a href="#" class="menu_link">Обо мне</a></li>
+              <li><a href="#" class="menu_link">Услуги</a></li>
+              <li><a href="#" class="menu_link">Кейсы</a></li>
+              <li><a href="#" class="menu_link">прайс</a></li>
+              <li><a href="#" class="menu_link">Отзывы</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="hero_info col-md-6">
+              <h1>
+                Привет <br />
+                Я Саша Яковенко
+              </h1>
+              <p>Начинающий веб-разработчик</p>
+              <div class="input">
+                <input type="button" value="Обо мне" />
+                <input type="button" value="Мои работы" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about_me">
+        <h2 class="title_block">Обо мне</h2>
+        <div class="container">
+          <div class="row justify-content-center">
+            <img
+              class="col-md-2"
+              src="img/cirkle_i.png"
+              alt="кругалая картинка"
+            />
+          </div>
+          <div class="row justify-content-center">
+            <p class="col-md-8">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              illum dolorum, perspiciatis soluta hic mollitia. Fugit, cum
+              suscipit? Quas voluptatibus laudantium commodi nulla dolorem
+              assumenda molestias reprehenderit, numquam eius, sint architecto
+              adipisci dolore.
+            </p>
+            <p class="col-md-8">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              illum dolorum, perspiciatis soluta hic mollitia. Fugit, cum
+              suscipit? Quas voluptatibus laudantium commodi nulla dolorem
+              assumenda molestias reprehenderit, numquam eius, sint architecto
+              adipisci dolore.
+            </p>
+          </div>
+          <input id="download_resume" type="submit" value="Скачать резюме" />
+        </div>
+      </section>
+      <section class="skills">
+        <h2 class="title_block">Что я умею</h2>
+        <div class="container">
+          <div class="skills_block row">
+            <div
+              class="skills_item col-md d-flex flex-column align-items-center"
+            >
+              <img src="img/icon_notebook.png" alt="тут картинка про дизайн" />
+              <h4>Веб дизайн</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Tempore, corrupti. Officiis fugit nulla et nostrum?
+              </p>
+            </div>
+            <div
+              class="skills_item col-md d-flex flex-column align-items-center"
+            >
+              <img
+                src="img/icon_quotes.png"
+                alt="тут картинка про разработку"
+              />
+              <h4>Разработка</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Tempore, corrupti. Officiis fugit nulla et nostrum?
+              </p>
+            </div>
+            <div
+              class="skills_item col-md d-flex flex-column align-items-center"
+            >
+              <img
+                src="img/icon_rocket.png"
+                alt="тут картинка про CEO-оптимизацию"
+              />
+              <h4>CEO-оптимизация</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Tempore, corrupti. Officiis fugit nulla et nostrum?
+              </p>
+            </div>
+            <div
+              class="skills_item col-md d-flex flex-column align-items-center"
+            >
+              <img src="img/icon_shout.png" alt="тут картинка про маркетинг" />
+              <h4>Маркетинг</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Tempore, corrupti. Officiis fugit nulla et nostrum?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cases">
+        <h2 class="title_block">Кейсы</h2>
+        <span class="cases_text-title"></span>
+        <div class="container">
+          <div class="cases_slider container">
+            <div class="button_left button_slider">
+              <img src="img/right-arrow.png" alt="" />
+            </div>
+            <div class="button_right button_slider">
+              <img src="img/right-arrow.png" alt="" />
+            </div>
+          </div>
+          <div class="about_site container">
+            <div class="about_site_left_container">
+              <h5>Клиент:</h5>
+              <p class="name_company">Yandex</p>
+              <h5>Адрес сайта:</h5>
+              <p class="cite_company">https://www.yandex.ru</p>
+              <a
+                class="link_company"
+                target="_blank"
+                href="https://www.yandex.ru"
+                >Перейти на сайт</a
+              >
+            </div>
+            <div class="about_site_right_container">
+              <h6>Название проекта</h6>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt,
+                quidem debitis ea doloremque, pariatur excepturi, officia
+                officiis incidunt maiores accusantium obcaecati itaque est
+                dolore alias blanditiis corporis! A nostrum quidem facere
+                magnam, sunt veniam sapiente eligendi quis voluptatibus
+                voluptatum veritatis laudantium cumque ex doloremque quae ipsum
+                ullam eos sed. In, modi ex?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>

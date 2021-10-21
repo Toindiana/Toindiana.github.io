@@ -1,0 +1,332 @@
+@font-face {
+  font-family: "Franklin";
+  src: url("../fonts/FRAMDCN.eot");
+  src: local("☺"), url("../fonts/FRAMDCN.woff") format("woff"),
+    url("../fonts/FRAMDCN.ttf") format("truetype"),
+    url("../fonts/FRAMDCN.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
+}
+body {
+  font-family: "Franklin";
+  font-weight: 500;
+  font-style: normal;
+}
+.header {
+  height: 60px;
+  background-color: #2a3e50;
+}
+.logo {
+  height: 100%;
+}
+.container {
+  height: 100%;
+}
+.row {
+  height: 100%;
+}
+.title_block {
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: -0.06em;
+  color: #263244;
+  text-align: center;
+  line-height: 60px;
+}
+.title_block::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  height: 4px;
+  width: 72px;
+  background: #d17700;
+}
+
+.logo_text {
+  font-size: 30px;
+  line-height: 60px;
+  color: #fff;
+}
+.menu {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 100%; */
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.menu li:nth-child(1) {
+  animation: open_menu 500ms;
+}
+.menu li:nth-child(2) {
+  animation: open_menu 1000ms;
+}
+.menu li:nth-child(3) {
+  animation: open_menu 1500ms;
+}
+.menu li:nth-child(4) {
+  animation: open_menu 2000ms;
+}
+.menu li:nth-child(5) {
+  animation: open_menu 2500ms;
+}
+.menu a {
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #fff;
+}
+@keyframes open_menu {
+  0% {
+    transform: scale(0.1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.main {
+  height: 100%;
+}
+.hero {
+  height: calc(100vh - 60px);
+  animation: open_menu 2s;
+  margin-bottom: 40px;
+  background: url(../img/i.png) 100% 100% / auto 90% no-repeat,
+    url(../img/fone_main_start.png) 50% / cover no-repeat;
+}
+.hero_info h1 {
+  text-align: center;
+  font-size: 79px;
+  font-weight: 500;
+  color: #223549;
+}
+.hero_info p {
+  text-align: center;
+  font-size: 21px;
+  font-weight: 500;
+  color: #76828e;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input input[type="button"] {
+  background: rgba(0, 0, 0, 0);
+  width: 95px;
+  height: 42px;
+  border: 1.6px solid #697784;
+  border-radius: 5px;
+  font-size: 19px;
+  font-weight: 500;
+  color: #697784;
+}
+.input input[type="button"]:last-child {
+  width: 126px;
+  margin-left: 26px;
+}
+.about_me img {
+  margin-top: 59px;
+  margin-bottom: 22px;
+}
+.about_me p {
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 18px;
+  line-height: 17px;
+  color: #38475a;
+}
+#download_resume {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  width: 157px;
+  text-align: right;
+  padding: 0px 10px;
+  height: 34px;
+  border: 0.5px solid #6f707e;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.06em;
+  color: #6f707e;
+  background: url(../img/download_icon.png) 3% 50% no-repeat
+    rgba(255, 255, 255, 0);
+  display: block;
+  margin: 33px auto 110px;
+  transition: all 0.3s;
+}
+#download_resume:hover {
+  background: rgba(111, 112, 126, 0.4);
+  transform: scale(1.1);
+  text-align: center;
+  cursor: pointer;
+}
+
+.skills {
+  padding-top: 107px;
+  padding-bottom: 92px;
+  margin-bottom: 40px;
+  background: url(../img/fon_skills.png) center / cover no-repeat;
+}
+.skills_block {
+  margin-top: 105px;
+  transform: scale(1.1) scaleY(2);
+  opacity: 0;
+  transition: all 2s;
+}
+.skills h4 {
+  font-size: 18px;
+  margin-top: 33px;
+  margin-bottom: 12px;
+  color: #e87700;
+}
+.skills_item img {
+  height: 47px;
+}
+.skills_item p {
+  text-align: center;
+  font-family: Calibri;
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #38475a;
+}
+
+.cases_slider {
+  width: 90%;
+  /* min-height: 60%; */
+  height: 590px;
+  position: relative;
+  background: url(../img/slider/fon_1.png) center/ auto 100% no-repeat;
+  transition: all 400ms;
+  margin-bottom: 39px;
+  box-shadow: -6px 4px 14px #cf7600;
+  border-radius: 10px;
+}
+.button_slider {
+  height: 6%;
+  width: 35px;
+  background: #cf7600;
+  position: absolute;
+  border-radius: 5px;
+}
+.button_slider img {
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.button_slider:hover {
+  box-shadow: 2px 2px 5px #cf7600;
+}
+.button_left {
+  transform: rotate(90deg);
+  left: 0;
+  top: 47%;
+}
+.button_right {
+  transform: rotate(270deg);
+  right: 0;
+  top: 47%;
+}
+.about_site {
+  display: flex;
+  justify-content: space-between;
+}
+.about_site_left_container h5 {
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: -0.06em;
+  color: #384354;
+}
+.about_site_left_container p {
+  margin: 14px 0;
+  font-family: Calibri;
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  color: #3f495a;
+  text-align: left;
+}
+.about_site_left_container a {
+  margin-top: 22px;
+  display: block;
+  width: 200px;
+  height: 44px;
+  background-color: #63b5ae;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 44px;
+  font-weight: 500;
+  letter-spacing: -0.06em;
+  color: #ffffff;
+  text-align: center;
+}
+.about_site_left_container a:hover {
+  box-shadow: -2px -2px 5px #63b5ae;
+}
+.about_site_right_container {
+  width: 78%;
+}
+.about_site_right_container h6 {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: -0.06em;
+  color: #384354;
+}
+.about_site_right_container p {
+  font-family: Calibri;
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  color: #3f495a;
+  text-align: left;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    position: relative;
+  }
+  .hero::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+  }
+  .hero_info {
+    z-index: 1;
+  }
+  .hero_info h1 {
+    text-shadow: 1px 1px 2px #111;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  .input input[type="button"] {
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
