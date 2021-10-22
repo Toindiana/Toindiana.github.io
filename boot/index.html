@@ -12,18 +12,39 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="row">
-          <div class="px-0 col-lg-3 col-md-4">
+        <div class="row mar_none">
+          <div class="col-8 col-lg-3 col-md-4">
             <div class="logo"><span class="logo_text">Саня Яковенко</span></div>
           </div>
-          <div class="px-0 col-lg-5 offset-lg-4 col-md-6 offset-md-2">
+          <div
+            class="d-none d-md-block col-lg-5 offset-lg-4 col-md-6 offset-md-2"
+          >
             <ul class="menu">
               <li><a href="#" class="menu_link">Обо мне</a></li>
               <li><a href="#" class="menu_link">Услуги</a></li>
               <li><a href="#" class="menu_link">Кейсы</a></li>
-              <li><a href="#" class="menu_link">прайс</a></li>
+              <li><a href="#" class="menu_link">Прайс</a></li>
               <li><a href="#" class="menu_link">Отзывы</a></li>
             </ul>
+          </div>
+          <div class="d-flex justify-content-end align-items-center item-center d-md-none col-4">
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn btn-secondary dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Меню
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                <li><a class="dropdown-item" href="#">Услуги</a></li>
+                <li><a class="dropdown-item" href="#">Кейсы</a></li>
+                <li><a class="dropdown-item" href="#">Прайс</a></li>
+                <li><a class="dropdown-item" href="#">Отзывы</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -51,7 +72,7 @@
         <div class="container">
           <div class="row justify-content-center">
             <img
-              class="col-md-2"
+              class="col-4 col-md-2"
               src="img/cirkle_i.png"
               alt="кругалая картинка"
             />
@@ -128,9 +149,13 @@
           </div>
         </div>
       </section>
+
       <section class="cases">
         <h2 class="title_block">Кейсы</h2>
-        <span class="cases_text-title"></span>
+        <span class="cases_text-title"
+          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+          Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</span
+        >
         <div class="container">
           <div class="cases_slider container">
             <div class="button_left button_slider">
@@ -147,7 +172,7 @@
               <h5>Адрес сайта:</h5>
               <p class="cite_company">https://www.yandex.ru</p>
               <a
-                class="link_company"
+                class="link_button"
                 target="_blank"
                 href="https://www.yandex.ru"
                 >Перейти на сайт</a
@@ -168,7 +193,193 @@
           </div>
         </div>
       </section>
+
+      <!--price -->
+      <section class="main container">
+        <div class="price_container">
+          <h2>Расчет стоимости</h2>
+          <form id="form_price" action="#">
+            <h6>Тип сайта</h6>
+            <select name="type_site" id="">
+              <option selected disabled hidden value="сайт-визитка">
+                Выберите пункт...
+              </option>
+              <option value="сайт-визитка">Сайт-визитка</option>
+              <option value="Корпоративный сайт">Корпоративный сайт</option>
+              <option value="Сайт-каталог">Сайт-каталог</option>
+              <option value="Сайт-портфолио">Сайт-портфолио</option>
+              <option value="Промо-сайт">Промо-сайт</option>
+              <option value="Лендинг">Лендинг</option>
+              <option value="Интернет магазин">Интернет магазин</option>
+            </select>
+            <h6>Дизайн</h6>
+            <select name="design" id="">
+              <option selected disabled hidden value="сайт-визитка">
+                Выберите пункт...
+              </option>
+              <option value="Готовый макет">Готовый макет</option>
+              <option value="Создание макета">Создание макета</option>
+              <option value="Совместное создание макета">
+                Совместное создание макета
+              </option>
+            </select>
+            <h6>Адаптивность</h6>
+            <select name="adaptive" id="">
+              <option selected disabled hidden value="сайт-визитка">
+                Выберите пункт...
+              </option>
+              <option value="Нужна адаптивная верстка">
+                Нужна адаптивная верстка
+              </option>
+              <option value="Без адаптивной верстки">
+                Без адаптивной верстки
+              </option>
+            </select>
+          </form>
+          <div class="price_total">
+            <div class="term">
+              <p>Сроки</p>
+              <p>0</p>
+            </div>
+            <div class="price">
+              <p>Стоимость</p>
+              <p>0</p>
+            </div>
+          </div>
+          <div class="price_button">
+            <a href="#" class="link_button">Оставить заявку</a>
+          </div>
+        </div>
+      </section>
+      <!-- price -->
+
+      <!-- main_statistics -->
+      <section class="statistics">
+        <h2 class="title_block">Статистика</h2>
+        <div class="statistics_container container">
+          <div class="statistics_item">
+            <img src="img/statistic/smile.png" alt=":-)" />
+            <h3>120</h3>
+            <p>Счастливых клиентов</p>
+          </div>
+          <div class="statistics_item">
+            <img src="img/statistic/quotes.png" alt="</>" />
+            <h3>4,600</h3>
+            <p>Часов работы</p>
+          </div>
+          <div class="statistics_item">
+            <img src="img/statistic/tick.png" alt="Галочка" />
+            <h3>340</h3>
+            <p>Проектов завершено</p>
+          </div>
+          <div class="statistics_item">
+            <img src="img/statistic/cup.png" alt="Кубок" />
+            <h3>23</h3>
+            <p>Наград получено</p>
+          </div>
+        </div>
+        <a name="comments"></a>
+      </section>
+      <!-- main_statistics -->
+
+      <!-- main_comment -->
+      <section class="main_comment">
+        <h2 class="title_block">Отзывы</h2>
+        <div class="comment_container container">
+          <img class="comment_img" src="img/comment_photo/1.jpeg" alt="фото" />
+          <div class="comment_text_container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              sapiente odit nemo iure ex porro atque, ipsam nihil fuga
+              praesentium non totam cumque facere hic dolor quidem similique
+              dicta sunt?
+            </p>
+            <p class="who_comments">
+              <span class="who_comments_name" style="font-weight: 700"
+                >Александр</span
+              ><span class="who_comments_post">, Директор ПАО "ТГК-1"</span>
+            </p>
+          </div>
+          <div class="comment_button_block">
+            <div
+              id="comment_1"
+              class="comment_button comment_button_active"
+            ></div>
+            <div id="comment_2" class="comment_button"></div>
+            <div id="comment_3" class="comment_button"></div>
+          </div>
+        </div>
+        <a name="contacts"></a>
+      </section>
+      <!-- main_comment -->
+
+      <!-- main_contacts -->
+      <section class="contacts">
+        <h2 class="title_block">Мои контакты</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          totam voluptate placeat, quae libero veniam.
+        </p>
+        <div class="contacts_container container">
+          <div class="contacts_contact">
+            <div class="contacts_items">
+              <img src="img/contacts/geolocation_.png" alt="Геолокация" />
+              <p>
+                Мурманск<br />
+                Ленинский проспект 55а
+              </p>
+            </div>
+            <div class="contacts_items">
+              <img src="img/contacts/email.png" alt="Эл.адрес" />
+              <p>yakovenko2.95@yandex.ru</p>
+            </div>
+            <div class="contacts_items">
+              <img src="img/contacts/phone.png" alt="Номер" />
+              <p>+7 999 999 99 99</p>
+            </div>
+          </div>
+          <div class="contacts_form">
+            <h3>Оставьте мне сообщение</h3>
+            <form action="#">
+              <input type="text" name="name" placeholder="Ваше имя" />
+              <input type="email" name="email" placeholder="Email" />
+              <textarea
+                name="message"
+                cols="80"
+                rows="10"
+                placeholder="Сообщение"
+              ></textarea>
+              <input name="home" type="submit" value="Отправить" />
+            </form>
+          </div>
+          <div class="contacts_social_networks">
+            <a class="social_link" href="#"
+              ><img src="img/social_networks/fb.png" alt="facebook"
+            /></a>
+            <a class="social_link" href="#"
+              ><img src="img/social_networks/twitter_.png" alt="twitter"
+            /></a>
+            <a class="social_link" href="#"
+              ><img src="img/social_networks/dribbble.png" alt="dribbble"
+            /></a>
+            <a class="social_link" href="#"
+              ><img src="img/social_networks/github.png" alt="github"
+            /></a>
+            <a class="social_link" href="#"
+              ><img src="img/social_networks/instagram.png" alt="instagram"
+            /></a>
+            <a class="social_link" href="#"
+              ><img src="img/social_networks/linkedin.png" alt="linkedin"
+            /></a>
+          </div>
+        </div>
+      </section>
+      <!-- main_contacts -->
     </main>
+    <footer class="footer">
+      <p>Copyright &copy;&nbsp;Саша Яковенко web-programmer</p>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
