@@ -160,6 +160,7 @@ a {
   top: 0;
   left: 0;
   z-index: -1;
+  object-fit: cover;
 }
 .promo_text_light {
   color: #fff;
@@ -194,9 +195,12 @@ a {
   margin-bottom: 25px;
 }
 .btn_promo {
+  display: block;
   background: #fff;
   border-radius: 50px;
-  padding: 13px 52px;
+  max-width: 230px;
+  text-align: center;
+  padding: 13px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 23px;
