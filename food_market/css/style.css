@@ -106,7 +106,7 @@ a {
     rgba(0, 0, 0, 0) 100%
   );
 }
-.summer {
+.slider_summer {
   background: url(../img/slider/summer.png) center / cover no-repeat;
 }
 .slider_content {
@@ -205,4 +205,236 @@ a {
   font-size: 16px;
   line-height: 23px;
   color: rgba(95, 95, 97, 1);
+}
+
+.delivery_week {
+  padding-top: 110px;
+  padding-bottom: 100px;
+}
+.week_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -15px;
+  padding-top: 47px;
+}
+.week_card {
+  max-width: 275px;
+  overflow: hidden;
+  border-radius: 18px;
+  position: relative;
+  margin: 15px;
+}
+.week_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.week_tag {
+  display: block;
+  padding: 5px 10px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  border-radius: 30px;
+  color: #49494f;
+  position: absolute;
+  top: 16px;
+  left: 10px;
+}
+.color_health {
+  background-color: #d0fd89;
+}
+.color_vegetables {
+  background-color: #aebc41;
+  color: #fff;
+}
+.color_meat {
+  background-color: #b86b78;
+  color: #fff;
+}
+.color_poultry {
+  background-color: #d68334;
+  color: #fff;
+}
+.color_fish {
+  background-color: #cd6255;
+  color: #fff;
+}
+.color_child {
+  background-color: #fffdbf;
+}
+.color_parents {
+  background-color: #f6fdc8;
+}
+.color_holiday {
+  background-color: #fef7fe;
+}
+
+.tabs {
+  display: flex;
+  list-style-type: none;
+  margin: 50px 0 60px;
+}
+.tabs_li {
+  font-size: 20px;
+  line-height: 23px;
+  color: #49494f;
+  margin-right: 58px;
+}
+.active {
+  color: #f37321;
+}
+
+.category {
+  background-color: #f6f6f6;
+  padding: 40px 0 60px;
+}
+.tabs_content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: -18px;
+}
+.tabs_card {
+  max-width: 270px;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 18px;
+}
+.tabs_image {
+  width: 100%;
+}
+.tabs_header,
+.tabs_footer {
+  margin: 0 25px 21px;
+}
+.tabs_title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000;
+  margin: 21px 0 13px;
+}
+.tabs_description {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #b9b9be;
+}
+.tabs_info {
+  display: flex;
+  flex-direction: column;
+}
+.info_price {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 23px;
+  color: #4b4b51;
+}
+.info_weight {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #aaaab1;
+}
+.tabs_footer {
+  display: flex;
+  justify-content: space-between;
+}
+.btn_tabs {
+  background-color: transparent;
+  padding: 15px 25px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f37321;
+  border: 2px solid #f37321;
+  border-radius: 33px;
+  cursor: pointer;
+}
+.btn_all_dishes {
+  display: block;
+  margin: 78px auto 0;
+  background-color: transparent;
+  padding: 16px 100px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f37321;
+  border: 2px solid #f37321;
+  border-radius: 33px;
+  cursor: pointer;
+}
+
+.advantages {
+  padding: 100px 0 200px;
+}
+.advantages_title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+  color: #000;
+  margin-bottom: 50px;
+}
+.advantages_cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.advantages_card {
+  max-width: 270px;
+  padding: 30px 24px 25px;
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+}
+.advantages_image {
+  display: block;
+  margin: 0 auto;
+}
+.advantages_cards_title {
+  margin: 34px auto 13px;
+  max-width: 158px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: #000;
+}
+.advantages_description {
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #49494f;
+}
+
+.footer {
+  background: #f6f6f6;
+}
+.footer_content {
+  display: flex;
+  align-items: center;
+}
+.footer_nav {
+  margin-left: 50px;
+}
+.footer_link {
+  margin-right: 50px;
+  text-decoration: underline;
+}
+.social_link {
+  margin-left: auto;
+}
+.social_link a {
+  margin-left: 20px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
