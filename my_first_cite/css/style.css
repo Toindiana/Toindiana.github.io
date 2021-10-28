@@ -146,8 +146,8 @@ a:visited {
   height: 100vh;
   animation: open_hero 2s;
   margin-bottom: 40px;
-  background: url(../img/i.png) 100% 100% / auto 90% fixed no-repeat,
-    url(../img/fone_main_start.png) 50% / cover fixed no-repeat;
+  background: url(../img/i.png) 100% 100% / auto 90% no-repeat,
+    url(../img/fone_main_start.png) 50% / cover no-repeat;
 }
 @keyframes open_hero {
   0% {
