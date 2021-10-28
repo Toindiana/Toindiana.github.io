@@ -1,445 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="description" content="Я Саша Яквоенко. А это мой первый сайт. Данный сайт является моей отпраной точкой в мир веб-разработки. 
-    Здесь будет появляться инофрмация обо мне">
-    <title>Мой первый сайт</title>
-</head>
-<body>
-    <header>
-        <nav class="wrapp">
-            <div class="nav_container item_scroll">
-                <div class="logo">Саша Яковенко</div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#">Обо мне</a></li>
-                        <li><a href="#">Услуги</a></li>
-                        <li><a href="#">Кейсы</a></li>
-                        <li><a href="#">Прайс</a></li>
-                        <li><a href="#comment">Отзывы</a></li>
-                        <li><a href="#contacts">Контакты</a></li>
-                    </ul>
-                </div>
-                <div class="menu_mobile">
-                    <p onclick="open_menu()" class="menu_mobile_button">Mеню</p>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/ya_slider.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>my_first_city_bootstrap</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row mar_none">
+          <div class="col-8 col-lg-3 col-md-4">
+            <div class="logo"><span class="logo_text">Саня Яковенко</span></div>
+          </div>
+          <div
+            class="d-none d-md-block col-lg-5 offset-lg-4 col-md-6 offset-md-2"
+          >
+            <ul class="menu">
+              <li><a href="#" class="menu_link">Обо мне</a></li>
+              <li><a href="#" class="menu_link">Услуги</a></li>
+              <li><a href="#" class="menu_link">Кейсы</a></li>
+              <li><a href="#" class="menu_link">Прайс</a></li>
+              <li><a href="#" class="menu_link">Отзывы</a></li>
+            </ul>
+          </div>
+          <div
+            class="d-flex justify-content-end align-items-center item-center d-md-none col-4">
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn btn-secondary dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Меню
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                <li><a class="dropdown-item" href="#">Услуги</a></li>
+                <li><a class="dropdown-item" href="#">Кейсы</a></li>
+                <li><a class="dropdown-item" href="#">Прайс</a></li>
+                <li><a class="dropdown-item" href="#">Отзывы</a></li>
+              </ul>
             </div>
-        </nav>
-        <div id="mobile_menu" class="menu_mobile_list">
-            <div class="mobile_list_container">
-                <ul>
-                    <li><a href="#">Обо мне</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Кейсы</a></li>
-                    <li><a href="#">Прайс</a></li>
-                    <li><a href="#comment">Отзывы</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
-                </ul>
-            </div>
+          </div>
         </div>
+      </div>
     </header>
-    
-    <main class="desktop">
-        <!-- старт меню с фотографией -->
-        <div class="main_start wrapp">
-            <div class="main_start_container">
-                <div class="start_hello">
-                    <h1>Привет <br> Я Саша Яковенко</h1>
-                    <p>Начинающий веб-разработчик</p>
-                    <div class="form_container">
-                        <form action="#">
-                            <input id="about_me" type="submit" value="Обо мне">
-                            <input id="my_works" type="submit" value="Мои работы">
-                        </form>
-                    </div>
-                </div>
-                <div class="strat_photo">
-                    <img src="img/i.png" alt="парень">
-                </div>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="hero_info col-md-6">
+              <h1>
+                Привет <br />
+                Я Саша Яковенко
+              </h1>
+              <p>Начинающий веб-разработчик</p>
+              <div class="input">
+                <input type="button" value="Обо мне" />
+                <input type="button" value="Мои работы" />
+              </div>
             </div>
+          </div>
         </div>
-         <!-- старт меню с фотографией -->
-
-         <!-- обо мне -->
-        <div class="wrapp main_about_me">
-            <h2>Обо мне</h2>
-            <div class="orang_line"></div>
-            <img src="img/cirkle_i.png" alt="тут картинка">
-            <div class="text_container">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quia voluptatem aperiam nulla ut ducimus sequi! 
-                    Quod labore nemo earum, incidunt nostrum, quia debitis a reiciendis unde maxime accusamus dolores tenetur repudiandae nihil?
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quia voluptatem aperiam nulla ut ducimus sequi! 
-                    Quod labore nemo earum, incidunt nostrum, quia debitis a reiciendis unde maxime accusamus dolores tenetur repudiandae nihil?
-                </p>
-            </div>
-            <div class="form_container">
-                <form action="#">
-                    <input id="download_resume" type="submit" value="Скачать резюме">
-                </form>
-            </div>
-        </div>
-        <!-- обо мне -->
-
-        <!-- что я умею -->
-        <div class="main_skills wrapp">
-            <h2>Что я умею</h2>
-            <div class="orang_line"></div>
-            <div class="skill_items_container">
-
-                <div class="skills_item">
-                    <img src="img/icon_notebook.png" alt="тут картинка про дизайн">
-                    <h4>Веб дизайн</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
-                <div class="skills_item">
-                    <img src="img/icon_quotes.png" alt="тут картинка про разработку">
-                    <h4>Разработка</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, corrupti. Officiis fugit nulla et nostrum?</p>
-                </div>
-                <div class="skills_item">
-                    <img src="img/icon_rocket.png" alt="тут картинка про CEO-оптимизацию">
-                    <h4>CEO-оптимизация</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, corrupti. Officiis fugit nulla et nostrum?</p>
-                </div>
-                <div class="skills_item">
-                    <img src="img/icon_shout.png" alt="тут картинка про маркетинг">
-                    <h4>Маркетинг</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, corrupti. Officiis fugit nulla et nostrum?</p>
-                </div>
-
-            </div>
-        </div>
-        <!-- что я умею -->
-
-        <!-- кейсы -->
-        <div class="main_cases wrapp">
-            <h2>Кейсы</h2>
-            <div class="orang_line"></div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Repudiandae iusto, repellat impedit expedita maiores maxime modi aspernatur perferendis.
+      </section>
+      <section class="about_me">
+        <h2 class="title_block">Обо мне</h2>
+        <div class="container">
+          <div class="row justify-content-center">
+            <img
+              class="col-4 col-md-2"
+              src="img/cirkle_i.png"
+              alt="кругалая картинка"
+            />
+          </div>
+          <div class="row justify-content-center">
+            <p class="col-md-8">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              illum dolorum, perspiciatis soluta hic mollitia. Fugit, cum
+              suscipit? Quas voluptatibus laudantium commodi nulla dolorem
+              assumenda molestias reprehenderit, numquam eius, sint architecto
+              adipisci dolore.
             </p>
-            <div class="cases_slider">
-                <img src="#" alt="картинки слайдера">
-            </div>
-            <div  class="cases_about_site">
-                <div class="about_site_block_left">
-                    <h5>Клиент:</h5>
-                    <p>Какая-то компания</p>
-                    <h5>Адрес сайта:</h5>
-                    <p>https://www.yandex.ru</p>
-                </div>
-                <div class="about_site_block_right">
-                    <h6>Название проекта</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                </div>
-            </div>
-            <div class="cases_form">
-                <form target="_blank" action="https://www.yandex.ru" method="post">
-                    <input type="submit" value="Открыть сайт">
-                </form>
-            </div>
+            <p class="col-md-8">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              illum dolorum, perspiciatis soluta hic mollitia. Fugit, cum
+              suscipit? Quas voluptatibus laudantium commodi nulla dolorem
+              assumenda molestias reprehenderit, numquam eius, sint architecto
+              adipisci dolore.
+            </p>
+          </div>
+          <input id="download_resume" type="submit" value="Скачать резюме" />
         </div>
-        <!-- кейсы -->
-
-        <!-- расчет стоимости -->
-        <div class="main_price wrapp">
-            <h2>Расчет стоимости</h2>
-            <div class="price_container">
-                <form action="#">
-                    <h6>Тип сайта</h6>
-                    <select name="type_site" id="">
-                        <option selected disabled hidden value="сайт-визитка">Выберите пункт...</option>
-                        <option value="сайт-визитка">Сайт-визитка</option>
-                        <option value="Корпоративный сайт">Корпоративный сайт</option>
-                        <option value="Сайт-каталог">Сайт-каталог</option>
-                        <option value="Сайт-портфолио">Сайт-портфолио</option>
-                        <option value="Промо-сайт">Промо-сайт</option>
-                        <option value="Лендинг">Лендинг</option>
-                        <option value="Интернет магазин">Интернет магазин</option>
-                    </select>
-                    <h6>Дизайн</h6>
-                    <select name="design" id="">
-                        <option selected disabled hidden value="сайт-визитка">Выберите пункт...</option>
-                        <option value="Готовый макет">Готовый макет</option>
-                        <option value="Создание макета">Создание макета</option>
-                        <option value="Совместное создание макета">Совместное создание макета</option>
-                    </select>
-                    <h6>Адаптивность</h6>
-                    <select name="adaptive" id="">
-                        <option selected disabled hidden value="сайт-визитка">Выберите пункт...</option>
-                        <option value="Нужна адаптивная верстка">Нужна адаптивная верстка</option>
-                        <option value="Без адаптивной верстки">Без адаптивной верстки</option>
-                    </select>
-                </form>
-                <div class="price_total">
-                    <hr>
-                    <div class="term">
-                        <p>Сроки</p>
-                        <p>0</p>
-                    </div>
-                    <div class="price">
-                        <p>Стоимость</p>
-                        <p>0</p>
-                    </div>
-                </div>
-                </div>
-        </div>
-        <!-- расчет стоимости -->
-
-        <!-- статистика -->
-        <div class="statistics wrapp">
-            <h2>Статистика</h2>
-            <div class="orang_line"></div>
-            <div class="statistics_container">
-                <div  class="statistics_item">
-                    <img src="img/statistic/smile.png" alt=":-)">
-                    <h3>120</h3>
-                    <p>Счастливых клиентов</p>
-                </div>
-                <div  class="statistics_item">
-                    <img src="img/statistic/quotes.png" alt="</>">
-                    <h3>4,600</h3>
-                    <p>Часов работы</p>
-                </div>
-                <div  class="statistics_item">
-                    <img src="img/statistic/tick.png" alt="Галочка">
-                    <h3>340</h3>
-                    <p>Проектов завершено</p>
-                </div>
-                <div  class="statistics_item">
-                    <img src="img/statistic/cup.png" alt="Кубок">
-                    <h3>23 </h3>
-                    <p>Наград получено</p>
-                </div>
+      </section>
+      <section class="skills">
+        <h2 class="title_block">Что я умею</h2>
+        <div class="container">
+          <div class="skills_block row">
+            <span class="skills_prompt">нажми на карточку чтобы увеличить</span>
+            <div
+              class="skills_item col-md d-flex flex-column align-items-center"
+            >
+              <img src="img/icon_notebook.png" alt="тут картинка про дизайн" />
+              <h4>Веб дизайн</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Tempore, corrupti. Officiis fugit nulla et nostrum?
+              </p>
             </div>
-        </div>
-        <!-- статистика -->
-
-        <!-- Отзывы -->
-        <div class="comment wrapp">
-            <a name="comment"></a>
-            <h2>Отзывы</h2>
-            <div class="orang_line"></div>
-            <img src="img/photo_comment.png" alt="фото">
-            <div class="comment_text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing   elit. 
-                    Ab sapiente odit nemo iure ex porro atque, ipsam nihil fuga praesentium non totam cumque facere hic dolor quidem similique dicta sunt?
-                </p>
+            <div
+              class="skills_item col-md d-flex flex-column align-items-center"
+            >
+              <img
+                src="img/icon_quotes.png"
+                alt="тут картинка про разработку"
+              />
+              <h4>Разработка</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Tempore, corrupti. Officiis fugit nulla et nostrum?
+              </p>
             </div>
+            <div
+              class="skills_item col-md d-flex flex-column align-items-center"
+            >
+              <img
+                src="img/icon_rocket.png"
+                alt="тут картинка про CEO-оптимизацию"
+              />
+              <h4>CEO-оптимизация</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Tempore, corrupti. Officiis fugit nulla et nostrum?
+              </p>
+            </div>
+            <div
+              class="skills_item col-md d-flex flex-column align-items-center"
+            >
+              <img src="img/icon_shout.png" alt="тут картинка про маркетинг" />
+              <h4>Маркетинг</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Tempore, corrupti. Officiis fugit nulla et nostrum?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cases">
+        <h2 class="title_block">Кейсы</h2>
+        <span class="cases_text-title"
+          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+          Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</span
+        >
+        <div class="container">
+          <div class="ya_slider slider">
+            <div class="ya_slide">
+              <img
+                class="slide_img"
+                height="100%"
+                src="img/slider/fon_1.png"
+                alt=""
+              />
+            </div>
+            <div class="ya_slide">
+              <img
+                class="slide_img"
+                height="100%"
+                src="img/slider/fon_2.png"
+                alt=""
+              />
+            </div>
+            <div class="ya_slide">
+              <img
+                class="slide_img"
+                height="100%"
+                src="img/slider/fon_3.png"
+                alt=""
+              />
+            </div>
+            <div class="ya_btn ya_btn_light"><img height="100%" src="img/right-arrow.png" alt=""></div>
+            <div class="ya_btn ya_btn_right"><img height="100%" src="img/right-arrow.png" alt=""></div>
+          </div>
+
+          <div class="about_site container">
+            <div class="about_site_left_container">
+              <h5>Клиент:</h5>
+              <p class="name_company">Yandex</p>
+              <h5>Адрес сайта:</h5>
+              <p class="cite_company">https://www.yandex.ru</p>
+              <a
+                class="link_button"
+                target="_blank"
+                href="https://www.yandex.ru"
+                >Перейти на сайт</a
+              >
+            </div>
+            <div class="about_site_right_container">
+              <h6>Название проекта</h6>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt,
+                quidem debitis ea doloremque, pariatur excepturi, officia
+                officiis incidunt maiores accusantium obcaecati itaque est
+                dolore alias blanditiis corporis! A nostrum quidem facere
+                magnam, sunt veniam sapiente eligendi quis voluptatibus
+                voluptatum veritatis laudantium cumque ex doloremque quae ipsum
+                ullam eos sed. In, modi ex?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--price -->
+      <section class="main container">
+        <div class="price_container">
+          <h2>Расчет стоимости</h2>
+          <form id="form_price" action="#">
+            <h6>Тип сайта</h6>
+            <select name="type_cite" id="type_cite">
+              <option selected disabled hidden value="сайт-визитка">
+                Выберите пункт...
+              </option>
+              <option value="1">Сайт-визитка</option>
+              <option value="2">Корпоративный сайт</option>
+              <option value="3">Сайт-каталог</option>
+              <option value="4">Сайт-портфолио</option>
+              <option value="5">Промо-сайт</option>
+              <option value="6">Лендинг</option>
+              <option value="7">Интернет магазин</option>
+            </select>
+            <h6>Дизайн</h6>
+            <select name="design" id="design_cite">
+              <option selected disabled hidden value="сайт-визитка">
+                Выберите пункт...
+              </option>
+              <option value="1">Готовый макет</option>
+              <option value="2">Создание макета</option>
+              <option value="3">
+                Совместное создание макета
+              </option>
+            </select>
+            <h6>Адаптивность</h6>
+            <select name="adaptive" id="adaptive_cite">
+              <option selected disabled hidden value="сайт-визитка">
+                Выберите пункт...
+              </option>
+              <option value="1">
+                Нужна адаптивная верстка
+              </option>
+              <option value="2">
+                Без адаптивной верстки
+              </option>
+            </select>
+            <button id="btn_reset" type="reset">Cбросить</button>
+          </form>
+          <div class="price_total">
+            <div class="term">
+              <p>Сроки</p>
+              <p class="term_text">0</p>
+            </div>
+            <div class="price">
+              <p>Стоимость</p>
+              <p class="price_text">0</p>
+            </div>
+          </div>
+          <div class="price_button">
+            <a href="#" class="link_button">Оставить заявку</a>
+          </div>
+  
+        </div>
+      </section>
+      <!-- price -->
+
+      <!-- main_statistics -->
+      <section class="statistics">
+        <h2 class="title_block">Статистика</h2>
+        <div class="statistics_container container">
+          <div class="statistics_item">
+            <img src="img/statistic/smile.png" alt=":-)" />
+            <h3>120</h3>
+            <p>Счастливых клиентов</p>
+          </div>
+          <div class="statistics_item">
+            <img src="img/statistic/quotes.png" alt="</>" />
+            <h3>4,600</h3>
+            <p>Часов работы</p>
+          </div>
+          <div class="statistics_item">
+            <img src="img/statistic/tick.png" alt="Галочка" />
+            <h3>340</h3>
+            <p>Проектов завершено</p>
+          </div>
+          <div class="statistics_item">
+            <img src="img/statistic/cup.png" alt="Кубок" />
+            <h3>23</h3>
+            <p>Наград получено</p>
+          </div>
+        </div>
+        <a name="comments"></a>
+      </section>
+      <!-- main_statistics -->
+
+      <!-- main_comment -->
+      <section class="main_comment">
+        <h2 class="title_block">Отзывы</h2>
+        <div class="comment_container container">
+          <span class="promt_comment">наведи на фото</span>
+          <img class="comment_img" src="img/comment_photo/1.jpeg" alt="фото" />
+          <div class="comment_text_container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              sapiente odit nemo iure ex porro atque, ipsam nihil fuga
+              praesentium non totam cumque facere hic dolor quidem similique
+              dicta sunt?
+            </p>
             <p class="who_comments">
-                <span style="font-weight: 700;">Дмитрий</span>, Директор ПАО "ТГК-1"
+              <span class="who_comments_name" style="font-weight: 700"
+                >Александр</span
+              ><span class="who_comments_post">, Директор ПАО "ТГК-1"</span>
             </p>
-
-            <div class="list_comment">
-                <div class="comment_1 comment_on"><a href="#">1</a></div>
-                <div class="comment_2 comment_off"><a href="#">1</a></div>
-                <div class="comment_3 comment_off"><a href="#">1</a></div>
-            </div>
+          </div>
+          <div class="comment_button_block">
+            <div
+              id="comment_1"
+              class="comment_button comment_button_active"
+            ></div>
+            <div id="comment_2" class="comment_button"></div>
+            <div id="comment_3" class="comment_button"></div>
+          </div>
         </div>
-        <!-- Отзывы -->
+        <a name="contacts"></a>
+      </section>
+      <!-- main_comment -->
 
-        <!-- контакты -->
-        <div class="main_contacts wrapp">
-            <a name="contacts"></a>
-            <h2>Мои контакты</h2>
-            <div class="orang_line"></div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae totam voluptate placeat, quae libero veniam.</p>
-
-            <div class="contacts_items_container">
-                <div class="contacts_items">
-                        <img src="img/contacts/geolocation_.png" alt="Геолокация">
-                        <p>Мурманск<br> Ленинский проспект 55а</p>
-                </div>
-                <div class="contacts_items">
-                    <img src="img/contacts/email.png" alt="Эл.адрес">
-                    <p>yakovenko2.95@yandex.ru</p>
-                </div>
-                <div class="contacts_items">
-                    <img src="img/contacts/phone.png" alt="Номер">
-                    <p>+7 999 999 99 99</p>
-                </div>
+      <!-- main_contacts -->
+      <section class="contacts">
+        <h2 class="title_block">Мои контакты</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          totam voluptate placeat, quae libero veniam.
+        </p>
+        <div class="contacts_container container">
+          <div class="contacts_contact">
+            <div class="contacts_items">
+              <img src="img/contacts/geolocation_.png" alt="Геолокация" />
+              <p>
+                Мурманск<br />
+                Ленинский проспект 55а
+              </p>
             </div>
-
-            <div class="contacts_form_container">
-                <form action="#">
-                    <h3>Оставьте мне сообщение</h3>
-                    <input type="text" name="name" placeholder="Ваше имя">
-                    <input type="email" name="email" placeholder="Email">
-                    <textarea name="message" cols="80" rows="10" placeholder="Сообщение"></textarea> <br>
-                    <input type="submit" value="Отправить">
-                </form>
-
-                <div class="contacts_social_networks">
-                    <a href="#"><img src="img/social_networks/fb.png" alt="facebook"></a>
-                    <a href="#"><img src="img/social_networks/twitter_.png" alt="twitter"></a>
-                    <a href="#"><img src="img/social_networks/dribbble.png" alt="dribbble"></a>
-                    <a href="#"><img src="img/social_networks/github.png" alt="github"></a>
-                    <a href="#"><img src="img/social_networks/instagram.png" alt="instagram"></a>
-                    <a href="#"><img src="img/social_networks/linkedin.png" alt="linkedin"></a>
-                </div>
+            <div class="contacts_items">
+              <img src="img/contacts/email.png" alt="Эл.адрес" />
+              <p>yakovenko2.95@yandex.ru</p>
             </div>
+            <div class="contacts_items">
+              <img src="img/contacts/phone.png" alt="Номер" />
+              <p>+7 999 999 99 99</p>
+            </div>
+          </div>
+          <div class="contacts_form">
+            <h3>Оставьте мне сообщение</h3>
+            <form action="#">
+              <input type="text" name="name" placeholder="Ваше имя" />
+              <input type="email" name="email" placeholder="Email" />
+              <textarea
+                name="message"
+                cols="80"
+                rows="10"
+                placeholder="Сообщение"
+              ></textarea>
+              <input name="home" type="submit" value="Отправить" />
+            </form>
+          </div>
+          <div class="contacts_social_networks">
+            <a class="social_link" href="#"
+              ><img src="img/social_networks/fb.png" alt="facebook"
+            /></a>
+            <a class="social_link" href="#"
+              ><img src="img/social_networks/twitter_.png" alt="twitter"
+            /></a>
+            <a class="social_link" href="#"
+              ><img src="img/social_networks/dribbble.png" alt="dribbble"
+            /></a>
+            <a class="social_link" href="#"
+              ><img src="img/social_networks/github.png" alt="github"
+            /></a>
+            <a class="social_link" href="#"
+              ><img src="img/social_networks/instagram.png" alt="instagram"
+            /></a>
+            <a class="social_link" href="#"
+              ><img src="img/social_networks/linkedin.png" alt="linkedin"
+            /></a>
+          </div>
         </div>
-        <!-- Контакты -->
-
-        
-        <div class="wrapp">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A72273cd7ee8c73811295f76cf3629f99f042453613da33beb55351123c7904d5&amp;source=constructor" 
-            width="100%" height="400" frameborder="0"></iframe>
-        </div>
+      </section>
+      <!-- main_contacts -->
     </main>
-
-    <main class="mobile">
-        <!-- старт меню с фотографией -->
-        <div class="main_start wrapp">
-            <div class="main_start_container">
-                <div class="start_hello">
-                    <h1>Привет <br> Я Саша Яковенко</h1>
-                    <p>Начинающий веб-разработчик</p>
-                    <div class="form_container">
-                        <form action="#">
-                            <input id="mobile_about_me" type="submit" value="Обо мне">
-                            <input id="mobile_my_works" type="submit" value="Мои работы">
-                        </form>
-                    </div>
-                </div>
-                <div class="strat_photo">
-                    <img src="img/cirkle_i.png" alt="парень">
-                </div>
-            </div>
-        </div>
-         <!-- старт меню с фотографией -->
-
-        <!-- что я умею -->
-        <div class="main_skills wrapp">
-            <h2>Что я умею</h2>
-            <div class="orang_line"></div>
-            <div class="item_scroll">
-                <div class="skill_items_container">
-                    <div class="skills_item">
-                        <img src="img/icon_notebook.png" alt="тут картинка про дизайн">
-                        <h4>Веб дизайн</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </div>
-                    <div class="skills_item">
-                        <img src="img/icon_quotes.png" alt="тут картинка про разработку">
-                        <h4>Разработка</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, corrupti. Officiis fugit nulla et nostrum?</p>
-                    </div>
-                    <div class="skills_item">
-                        <img src="img/icon_rocket.png" alt="тут картинка про CEO-оптимизацию">
-                        <h4>CEO-оптимизация</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, corrupti. Officiis fugit nulla et nostrum?</p>
-                    </div>
-                    <div class="skills_item">
-                        <img src="img/icon_shout.png" alt="тут картинка про маркетинг">
-                        <h4>Маркетинг</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, corrupti. Officiis fugit nulla et nostrum?</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- что я умею -->
-
-        <!-- расчет стоимости -->
-        <div class="main_price wrapp">
-            <h2>Расчет стоимости</h2>
-            <div class="price_container">
-                <form action="#">
-                    <h6>Тип сайта</h6>
-                    <select name="type_site" id="">
-                        <option selected disabled hidden value="сайт-визитка">Выберите пункт...</option>
-                        <option value="сайт-визитка">Сайт-визитка</option>
-                        <option value="Корпоративный сайт">Корпоративный сайт</option>
-                        <option value="Сайт-каталог">Сайт-каталог</option>
-                        <option value="Сайт-портфолио">Сайт-портфолио</option>
-                        <option value="Промо-сайт">Промо-сайт</option>
-                        <option value="Лендинг">Лендинг</option>
-                        <option value="Интернет магазин">Интернет магазин</option>
-                    </select>
-                    <h6>Дизайн</h6>
-                    <select name="design" id="">
-                        <option selected disabled hidden value="сайт-визитка">Выберите пункт...</option>
-                        <option value="Готовый макет">Готовый макет</option>
-                        <option value="Создание макета">Создание макета</option>
-                        <option value="Совместное создание макета">Совместное создание макета</option>
-                    </select>
-                    <h6>Адаптивность</h6>
-                    <select name="adaptive" id="">
-                        <option selected disabled hidden value="сайт-визитка">Выберите пункт...</option>
-                        <option value="Нужна адаптивная верстка">Нужна адаптивная верстка</option>
-                        <option value="Без адаптивной верстки">Без адаптивной верстки</option>
-                    </select>
-                </form>
-                <div class="price_total">
-                    <hr>
-                    <div class="term">
-                        <p>Сроки</p>
-                        <p>0</p>
-                    </div>
-                    <div class="price">
-                        <p>Стоимость</p>
-                        <p>0</p>
-                    </div>
-                </div>
-                </div>
-        </div>
-        <!-- расчет стоимости -->
-
-         <!-- контакты -->
-         <div class="main_contacts wrapp">
-            <a name="contacts"></a>
-            <h2>Мои контакты</h2>
-            <div class="orang_line"></div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae totam voluptate placeat, quae libero veniam.</p>
-
-            <div class="contacts_items_container">
-                <div class="contacts_items">
-                        <img src="img/contacts/geolocation_.png" alt="Геолокация">
-                        <p>Мурманск<br> Ленинский проспект 55а</p>
-                </div>
-                <div class="contacts_items">
-                    <img src="img/contacts/email.png" alt="Эл.адрес">
-                    <p>yakovenko2.95@yandex.ru</p>
-                </div>
-                <div class="contacts_items">
-                    <img src="img/contacts/phone.png" alt="Номер">
-                    <p>+7 999 999 99 99</p>
-                </div>
-            </div>
-
-            <div class="contacts_form_container">
-                <form action="#">
-                    <h3>Оставьте мне сообщение</h3>
-                    <input type="text" name="name" placeholder="Ваше имя">
-                    <input type="email" name="email" placeholder="Email">
-                    <textarea name="message" cols="80" rows="10" placeholder="Сообщение"></textarea> <br>
-                    <input type="submit" value="Отправить">
-                </form>
-
-                <!-- <div class="contacts_social_networks">
-                    <a href="#"><img src="img/social_networks/fb.png" alt="facebook"></a>
-                    <a href="#"><img src="img/social_networks/twitter_.png" alt="twitter"></a>
-                    <a href="#"><img src="img/social_networks/dribbble.png" alt="dribbble"></a>
-                    <a href="#"><img src="img/social_networks/github.png" alt="github"></a>
-                    <a href="#"><img src="img/social_networks/instagram.png" alt="instagram"></a>
-                    <a href="#"><img src="img/social_networks/linkedin.png" alt="linkedin"></a>
-                </div> -->
-            </div>
-        </div>
-        <!-- контакты -->
-
-
-    </main>
-    <footer class="wrapp">
-        <p>Copyright &copy; Саша Яковенко web-programmer</p>
+    <footer class="footer">
+      <p>Copyright &copy;&nbsp;Саша Яковенко web-programmer</p>
     </footer>
-    
-    <script src="js/js.js"></script>
-</body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/ya_slider.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
