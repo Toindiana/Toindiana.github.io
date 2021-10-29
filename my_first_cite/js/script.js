@@ -52,18 +52,26 @@ left.addEventListener("click", goSlidLeft); */
 // управление слайдером
 
 // появление элементов в разделе "что я умею"
-let skills_block = document.querySelector(".skills_block");
-let skills_block_top = skills_block.offsetTop; 
-let height_page = document.documentElement.clientHeight; 
-let height_skills_block = skills_block.clientHeight;
+let skills_block = document.querySelector(".skills_block"); 
+let skills_block_top = skills_block.offsetTop; //расстояние от начала блока до верха страницы
+let height_page = document.documentElement.clientHeight; // выстоа окна браузера 
+let height_skills_block = skills_block.clientHeight; // выстота блока
 
 
 function open_skills() {
-    let scroll_page = window.pageYOffset;
-    if((skills_block_top - height_page) < scroll_page - height_skills_block) {
+    let scroll_page = window.pageYOffset; // на сколько пользователь прокрутил страницу
+    if (document.documentElement.clientWidth < 426) {
+        if((skills_block_top - height_page) < scroll_page) {
+        skills_block.style.opacity = "1";
+        skills_block.style.transform = "scale(1) scaleY(1) translate(0, 0)";
+    } 
+    } else {
+        if((skills_block_top - height_page) < scroll_page - height_skills_block) {
         skills_block.style.opacity = "1";
         skills_block.style.transform = "scale(1) scaleY(1)";
     } 
+    }
+    
 }
 
 window.addEventListener("scroll", open_skills);
