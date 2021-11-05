@@ -651,21 +651,9 @@ button[type="reset"] {
 /*main_comment*/
 
 /*main_contacts*/
-/* .contacts::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: rgb(17,27,46);
-  z-index: -10;
-} */
 .contacts {
   position: relative;
-  /* background: rgb(17,27,46); */
   padding: 100px 0 65px;
-  transition: all 2s;
 }
 .contacts_bg {
   display: block;
@@ -674,7 +662,7 @@ button[type="reset"] {
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 1;
   object-fit: cover;
 }
 .contacts .title_block {
