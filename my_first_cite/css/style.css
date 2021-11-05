@@ -655,8 +655,11 @@ button[type="reset"] {
   position: relative;
   padding: 100px 0 65px;
 }
+.contacts_wrap {
+  position: relative;
+  z-index: 1;
+}
 .contacts_bg {
-  display: block;
   position: absolute;
   left: 0;
   top: 0;
@@ -668,7 +671,7 @@ button[type="reset"] {
 .contacts .title_block {
   color: #fff;
 }
-.contacts > p {
+.contacts_wrap> p {
   text-align: center;
   margin-top: 35px;
   margin-bottom: 37px;
@@ -845,7 +848,7 @@ input[type="email"] {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -3;
+    z-index: -1;
   }
   .menu {
     padding-left: 0;

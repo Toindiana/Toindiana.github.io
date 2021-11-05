@@ -59,11 +59,13 @@
                 Меню
               </button>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Обо мне</a></li>
-                <li><a class="dropdown-item" href="#">Услуги</a></li>
-                <li><a class="dropdown-item" href="#">Кейсы</a></li>
-                <li><a class="dropdown-item" href="#">Прайс</a></li>
-                <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                <li>
+                  <a class="dropdown-item" href="#go_about_me">Обо мне</a>
+                </li>
+                <li><a class="dropdown-item" href="#go_skills">Услуги</a></li>
+                <li><a class="dropdown-item" href="#go_cases">Кейсы</a></li>
+                <li><a class="dropdown-item" href="#go_price">Прайс</a></li>
+                <li><a class="dropdown-item" href="#go_comments">Отзывы</a></li>
               </ul>
             </div>
           </div>
@@ -82,9 +84,7 @@
 
     <div id="open_slider" class="model_window">
       <div class="model_banner">
-        <span class="model_text"
-          >Нажми на лого, чтоб открыть слайдер</span
-        >
+        <span class="model_text">Нажми на лого, чтоб открыть слайдер</span>
         <button class="model_btn">закрыть</button>
       </div>
     </div>
@@ -390,62 +390,64 @@
           data-goodBg="img/fon_contacts.png"
           alt=""
         />
-        <h2 class="title_block">Мои контакты</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          totam voluptate placeat, quae libero veniam.
-        </p>
-        <div class="contacts_container container">
-          <div class="contacts_contact">
-            <div class="contacts_items">
-              <img src="img/contacts/geolocation_.png" alt="Геолокация" />
-              <p>
-                Мурманск<br />
-                Ленинский проспект 55а
-              </p>
+        <div class="contacts_wrap">
+          <h2 class="title_block">Мои контакты</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae totam voluptate placeat, quae libero veniam.
+          </p>
+          <div class="contacts_container container">
+            <div class="contacts_contact">
+              <div class="contacts_items">
+                <img src="img/contacts/geolocation_.png" alt="Геолокация" />
+                <p>
+                  Мурманск<br />
+                  Ленинский проспект 55а
+                </p>
+              </div>
+              <div class="contacts_items">
+                <img src="img/contacts/email.png" alt="Эл.адрес" />
+                <p>yakovenko2.95@yandex.ru</p>
+              </div>
+              <div class="contacts_items">
+                <img src="img/contacts/phone.png" alt="Номер" />
+                <p>+7 999 999 99 99</p>
+              </div>
             </div>
-            <div class="contacts_items">
-              <img src="img/contacts/email.png" alt="Эл.адрес" />
-              <p>yakovenko2.95@yandex.ru</p>
+            <div class="contacts_form">
+              <h3>Оставьте мне сообщение</h3>
+              <form action="#">
+                <input type="text" name="name" placeholder="Ваше имя" />
+                <input type="email" name="email" placeholder="Email" />
+                <textarea
+                  name="message"
+                  cols="80"
+                  rows="10"
+                  placeholder="Сообщение"
+                ></textarea>
+                <input name="home" type="submit" value="Отправить" />
+              </form>
             </div>
-            <div class="contacts_items">
-              <img src="img/contacts/phone.png" alt="Номер" />
-              <p>+7 999 999 99 99</p>
+            <div class="contacts_social_networks">
+              <a class="social_link" href="#"
+                ><img src="img/social_networks/fb.png" alt="facebook"
+              /></a>
+              <a class="social_link" href="#"
+                ><img src="img/social_networks/twitter_.png" alt="twitter"
+              /></a>
+              <a class="social_link" href="#"
+                ><img src="img/social_networks/dribbble.png" alt="dribbble"
+              /></a>
+              <a class="social_link" href="#"
+                ><img src="img/social_networks/github.png" alt="github"
+              /></a>
+              <a class="social_link" href="#"
+                ><img src="img/social_networks/instagram.png" alt="instagram"
+              /></a>
+              <a class="social_link" href="#"
+                ><img src="img/social_networks/linkedin.png" alt="linkedin"
+              /></a>
             </div>
-          </div>
-          <div class="contacts_form">
-            <h3>Оставьте мне сообщение</h3>
-            <form action="#">
-              <input type="text" name="name" placeholder="Ваше имя" />
-              <input type="email" name="email" placeholder="Email" />
-              <textarea
-                name="message"
-                cols="80"
-                rows="10"
-                placeholder="Сообщение"
-              ></textarea>
-              <input name="home" type="submit" value="Отправить" />
-            </form>
-          </div>
-          <div class="contacts_social_networks">
-            <a class="social_link" href="#"
-              ><img src="img/social_networks/fb.png" alt="facebook"
-            /></a>
-            <a class="social_link" href="#"
-              ><img src="img/social_networks/twitter_.png" alt="twitter"
-            /></a>
-            <a class="social_link" href="#"
-              ><img src="img/social_networks/dribbble.png" alt="dribbble"
-            /></a>
-            <a class="social_link" href="#"
-              ><img src="img/social_networks/github.png" alt="github"
-            /></a>
-            <a class="social_link" href="#"
-              ><img src="img/social_networks/instagram.png" alt="instagram"
-            /></a>
-            <a class="social_link" href="#"
-              ><img src="img/social_networks/linkedin.png" alt="linkedin"
-            /></a>
           </div>
         </div>
       </section>
