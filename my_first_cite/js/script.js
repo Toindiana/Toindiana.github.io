@@ -1,55 +1,3 @@
-// управление слайдером
-/*
-let slider = document.querySelector(".cases_slider"); 
-let right = document.querySelector(".button_right");
-let left = document.querySelector(".button_left");
-let slid = 1;
-let name_company = document.querySelector(".name_company");
-let cite_company = document.querySelector(".cite_company");
-let link_company = document.querySelector(".link_company");
-
-let name_company_arr = ["_", "Yandex", "Rambler", "HtmlBook"];
-let cite_company_arr = ["_", "https://yandex.ru", "https://www.rambler.ru", "http://htmlbook.ru"];
-let link_company_arr = ["_", "https://yandex.ru", "https://www.rambler.ru", "http://htmlbook.ru"];
-
-
-function goCite () {
-    slider.style.background = "url(img/slider/fon_" + slid + ".png) center/ auto 100% no-repeat";
-    name_company.textContent = name_company_arr[slid];
-    cite_company.textContent = cite_company_arr[slid];
-    link_company.setAttribute("href", link_company_arr[slid]);
-}
-function aniSlider () {
-    slider.style.background = "url(img/slider/fon_" + slid + ".png) center/ auto 1% no-repeat";
-}
-
-function goSlidRigth() {
-    if(slid <= 2){
-        aniSlider();
-        slid = slid + 1;
-        setTimeout(goCite, 405);
-    }else {
-        aniSlider();
-        slid = 1;
-        setTimeout(goCite, 405);
-    }
-    
-}
-function goSlidLeft() {
-    if (slid == 1) {
-            aniSlider();
-            slid = 1;
-            setTimeout(goCite, 405);
-    }else {
-            aniSlider();
-            slid = slid - 1;
-            setTimeout(goCite, 405);
-        }  
-}
-
-right.addEventListener("click", goSlidRigth);
-left.addEventListener("click", goSlidLeft); */
-// управление слайдером
 
 // появление элементов в разделе "что я умею"
 let skills_block = document.querySelector(".skills_block"); 
@@ -236,3 +184,89 @@ btn_reset.addEventListener("click", () => {
     term_text.textContent = "0";
 })
 //калькулятор цены
+
+
+
+
+
+
+
+
+//появление статистики и набирающеся цифры
+let option = {threshold: [0.5]};
+let observer = new IntersectionObserver(onEntry, option);
+let element = $(".statistics_container");
+element.each((i, el) => {
+    observer.observe(el);
+})
+
+function onEntry (entry) {
+    entry.forEach(change => {
+        if(change.isIntersecting){
+            change.target.classList.remove("hide");
+            go_statistics($('#happy_clients'), 0, 120, 5);
+            go_statistics($('#hours_work'), 0, 4600, 200);
+            go_statistics($('#project_end'), 0, 340, 20);
+             go_statistics($('#awards'), 0, 23, 1);
+        } else {
+            change.target.classList.add("hide");
+        }
+    })
+}
+
+function go_statistics(item, start, end, step) {
+    let sInt = setInterval(()=> {
+        start = start + step;
+        item.text(start);
+            if(start === end) {
+                clearInterval(sInt);
+            }
+    }, 70)
+}
+//появление статистики и бегущие цифры
+
+$("a[href^='#']").click(function() {
+    let valHref = $(this).attr("href");
+    $("html, body").animate({scrollTop: $(valHref).offset().top - $(".header").outerHeight()});
+})
+
+
+
+$(window).scroll(() => {
+    let scrollDistance = $(window).scrollTop();
+    $(".section").each((i, el) => {
+
+        if($(el).offset().top - $(".header").outerHeight() - 100 <= scrollDistance ) {
+            $(".menu li").each((i, el) => {
+                if($(el).hasClass("menu_active")){
+                    $(el).removeClass("menu_active");
+                }
+            });
+
+            $(".menu li:eq("+ i +")").addClass("menu_active");
+        } else {
+            $(".menu li:eq("+ i +")").removeClass("menu_active");
+        };
+
+        if($(el).offset().top + $(el).outerHeight() + 400  <= scrollDistance) {
+            $(".menu li:eq("+ i +")").removeClass("menu_active");
+        }
+    })
+
+
+    if($(".contacts").offset().top <= scrollDistance + ($(window).height() / 1.1) ) {
+        $(".contacts").css("background", "url(../img/fon_contacts.png) 0 0 / cover no-repeat");
+        $(".contacts").css("opacity", "1"); //дозагрузка фона для секции контакты
+    }
+    
+});
+
+setTimeout(() => {
+    $(".model_window").css("display", "flex");
+}, 3000);
+
+$(".model_window").click(()=> {
+    $(".model_window").css("display", "none");
+})
+
+

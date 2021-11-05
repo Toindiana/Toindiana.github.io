@@ -21,9 +21,7 @@ a {
   text-decoration: none;
   color: black;
 }
-a:visited {
-  color: black;
-}
+
 .container {
   height: 100%;
 }
@@ -111,10 +109,16 @@ a:visited {
 .menu li:nth-child(5) {
   animation: open_menu 2500ms;
 }
-.menu a {
+.menu_link {
   text-transform: uppercase;
   font-size: 17px;
   color: #fff;
+}
+.menu_link:hover {
+  color: #fff;
+}
+.menu_active {
+  transform: scale(1.2) skew(5deg, 5deg);
 }
 .menu li:hover {
   transform: skew(5deg, 5deg);
@@ -138,6 +142,57 @@ a:visited {
   color: #f4be84;
 }
 
+.model_window {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(31, 29, 29, 0.4);
+  z-index: 89;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.model_banner {
+  width: 50%;
+  background: rgba(42, 62, 80, 0.9);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+.model_text {
+  color: #fff;
+  font-size: 25px;
+}
+.sale {
+  display: block;
+  font-size: 30px;
+  animation: sale 1s alternate infinite;
+}
+.model_btn {
+  position: absolute;
+  padding: 10px;
+  right: -47px;
+  top: -19px;
+  border: none;
+  border-radius: 30px;
+  background: rgba(42, 62, 80, 0.9);
+  color: #fff;
+}
+
+@keyframes sale {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1.4);
+  }
+}
 .main {
   height: 100%;
 }
@@ -248,15 +303,18 @@ a:visited {
 .skills_item {
   transition: all 500ms;
 }
-.skills_item:nth-child(1):active,
-.skills_item:nth-child(2):active {
+.skills_item:nth-child(1) {
+  transform: rotate(50deg);
+}
+.skills_item:nth-child(2):active,
+.skills_item:nth-child(3):active {
   transform: rotate(360deg) scale(1.6) translateX(50px);
   transition: all 300ms;
   background-color: rgba(190, 192, 223, 0.6);
   border-radius: 30px;
 }
-.skills_item:nth-child(3):active,
-.skills_item:nth-child(4):active {
+.skills_item:nth-child(4):active,
+.skills_item:nth-child(5):active {
   transform: rotate(360deg) scale(1.6) translateX(-50px);
   transition: all 300ms;
   background-color: rgba(190, 192, 223, 0.6);
@@ -502,6 +560,7 @@ button[type="reset"] {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  transition: all 2s;
 }
 .statistics_item {
   margin: 5px auto;
@@ -525,6 +584,10 @@ button[type="reset"] {
 }
 .statistics_item:hover {
   transform: rotate(8deg) scale(1.17);
+}
+
+.hide {
+  opacity: 0;
 }
 /*main_statistics*/
 
@@ -588,9 +651,22 @@ button[type="reset"] {
 /*main_comment*/
 
 /*main_contacts*/
+.contacts::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgb(17,27,46);
+  z-index: -10;
+}
 .contacts {
-  background: url(../img/fon_contacts.png) 0 0 / cover no-repeat;
+  position: relative;
+  background: rgb(17,27,46);
   padding: 100px 0 65px;
+  opacity: 0;
+  transition: all 2s;
 }
 .contacts .title_block {
   color: #fff;
@@ -718,6 +794,7 @@ input[type="email"] {
 }
 /*footer*/
 
+
 @media (max-width: 991px) {
   .hero {
     position: relative;
@@ -762,6 +839,9 @@ input[type="email"] {
     right: 0;
     bottom: 0;
     z-index: -1;
+  }
+  .menu {
+    padding-left: 0;
   }
   .about_me {
     background-color: #fff;

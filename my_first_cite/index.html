@@ -18,14 +18,21 @@
             <div class="logo"><span class="logo_text">Саня Яковенко</span></div>
           </div>
           <div
-            class="d-none d-md-block col-lg-5 offset-lg-4 col-md-6 offset-md-2"
+            class="
+              d-none d-md-block
+              col-lg-5
+              offset-lg-4
+              col-md-6
+              offset-md-2
+              p-0
+            "
           >
             <ul class="menu">
-              <li><a href="#" class="menu_link">Обо мне</a></li>
-              <li><a href="#" class="menu_link">Услуги</a></li>
-              <li><a href="#" class="menu_link">Кейсы</a></li>
-              <li><a href="#" class="menu_link">Прайс</a></li>
-              <li><a href="#" class="menu_link">Отзывы</a></li>
+              <li><a href="#go_about_me" class="menu_link">Обо мне</a></li>
+              <li><a href="#go_skills" class="menu_link">Услуги</a></li>
+              <li><a href="#go_cases" class="menu_link">Кейсы</a></li>
+              <li><a href="#go_price" class="menu_link">Прайс</a></li>
+              <li><a href="#go_comments" class="menu_link">Отзывы</a></li>
             </ul>
           </div>
           <div
@@ -59,7 +66,17 @@
         </div>
       </div>
     </header>
+    <div class="model_window">
+      <div class="model_banner">
+        <span class="model_text"
+          >Закажите сайт до 15 декабря и получите скидку
+          <span class="sale">25%</span></span
+        >
+        <button class="model_btn">закрыть</button>
+      </div>
+    </div>
     <main class="main">
+      <!--hero -->
       <section class="hero">
         <div class="container">
           <div class="row align-items-center">
@@ -77,8 +94,11 @@
           </div>
         </div>
       </section>
+      <!--hero -->
+
+      <!--about_me -->
       <section class="about_me">
-        <h2 class="title_block">Обо мне</h2>
+        <h2 id="go_about_me" class="title_block section">Обо мне</h2>
         <div class="container">
           <div class="row justify-content-center">
             <img
@@ -106,8 +126,11 @@
           <input id="download_resume" type="submit" value="Скачать резюме" />
         </div>
       </section>
-      <section class="skills">
-        <h2 class="title_block">Что я умею</h2>
+      <!--about_me -->
+
+      <!--skills -->
+      <section class="skills section">
+        <h2 id="go_skills" class="title_block">Что я умею</h2>
         <div class="container">
           <div class="skills_block row">
             <span class="skills_prompt">нажми на карточку чтобы увеличить</span>
@@ -160,9 +183,11 @@
           </div>
         </div>
       </section>
+      <!--skills -->
 
+      <!--cases -->
       <section class="cases">
-        <h2 class="title_block">Кейсы</h2>
+        <h2 id="go_cases" class="title_block section">Кейсы</h2>
         <span class="cases_text-title"
           >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
           Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</span
@@ -229,11 +254,12 @@
           </div>
         </div>
       </section>
+      <!--cases -->
 
       <!--price -->
       <section class="price">
         <div class="price_container container">
-          <h2>Расчет стоимости</h2>
+          <h2 id="go_price" class="section">Расчет стоимости</h2>
           <form id="form_price" action="#">
             <h6>Тип сайта</h6>
             <select name="type_cite" id="type_cite">
@@ -287,35 +313,34 @@
       <!-- main_statistics -->
       <section class="statistics">
         <h2 class="title_block">Статистика</h2>
-        <div class="statistics_container container">
+        <div class="statistics_container hide container">
           <div class="statistics_item">
             <img src="img/statistic/smile.png" alt=":-)" />
-            <h3>120</h3>
+            <h3 id="happy_clients">120</h3>
             <p>Счастливых клиентов</p>
           </div>
           <div class="statistics_item">
             <img src="img/statistic/quotes.png" alt="</>" />
-            <h3>4,600</h3>
+            <h3 id="hours_work">4,600</h3>
             <p>Часов работы</p>
           </div>
           <div class="statistics_item">
             <img src="img/statistic/tick.png" alt="Галочка" />
-            <h3>340</h3>
+            <h3 id="project_end">340</h3>
             <p>Проектов завершено</p>
           </div>
           <div class="statistics_item">
             <img src="img/statistic/cup.png" alt="Кубок" />
-            <h3>23</h3>
+            <h3 id="awards">23</h3>
             <p>Наград получено</p>
           </div>
         </div>
-        <a name="comments"></a>
       </section>
       <!-- main_statistics -->
 
       <!-- main_comment -->
       <section class="main_comment">
-        <h2 class="title_block">Отзывы</h2>
+        <h2 id="go_comments" class="title_block section">Отзывы</h2>
         <div class="comment_container container">
           <span class="promt_comment">наведи на фото</span>
           <img class="comment_img" src="img/comment_photo/1.jpeg" alt="фото" />
@@ -341,12 +366,11 @@
             <div id="comment_3" class="comment_button"></div>
           </div>
         </div>
-        <a name="contacts"></a>
       </section>
       <!-- main_comment -->
 
       <!-- main_contacts -->
-      <section class="contacts">
+      <section class="contacts white_class">
         <h2 class="title_block">Мои контакты</h2>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
@@ -408,10 +432,12 @@
       </section>
       <!-- main_contacts -->
     </main>
+
     <footer class="footer">
       <p>Copyright &copy;&nbsp;Саша Яковенко web-programmer</p>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/ya_slider.js"></script>
     <script src="js/script.js"></script>
   </body>
