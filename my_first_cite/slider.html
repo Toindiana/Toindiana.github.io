@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fotorama.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>my_first_city_bootstrap</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row mar_none">
+          <div class="col-8 col-lg-3 col-md-4">
+            <div class="logo"><span class="logo_text">Саня Яковенко</span></div>
+          </div>
+          <div
+            class="
+              d-none d-md-block
+              col-lg-5
+              offset-lg-4
+              col-md-6
+              offset-md-2
+              p-0
+            "
+          >
+            <ul  class="menu">
+              <li style="margin-left: auto;"><a href="index.html" class="menu_link">На главную</a></li>
+            </ul>
+          </div>
+          <div
+            class="
+              d-flex
+              justify-content-end
+              align-items-center
+              item-center
+              d-md-none
+              col-4
+            "
+          >
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn btn-secondary dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Меню
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                <li><a class="dropdown-item" href="#">Услуги</a></li>
+                <li><a class="dropdown-item" href="#">Кейсы</a></li>
+                <li><a class="dropdown-item" href="#">Прайс</a></li>
+                <li><a class="dropdown-item" href="#">Отзывы</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main_slider">
+      <div class="slider_fotorama">
+        <div class="fotorama" data-allowfullscreen="true">
+          <img width="100%" src="img/fotorama/sm_1.jpg" data-full="img/fotorama/big_1.jpg" />
+          <img src="img/fotorama/sm_2.jpg" data-full="img/fotorama/big_2.jpg" />
+          <img src="img/fotorama/sm_3.jpg" data-full="img/fotorama/big_3.jpg" />
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>Copyright &copy;&nbsp;Саша Яковенко web-programmer</p>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/fotorama.js"></script>
+  </body>
+</html>

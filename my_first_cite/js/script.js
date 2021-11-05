@@ -186,17 +186,12 @@ btn_reset.addEventListener("click", () => {
 //калькулятор цены
 
 
-
-
-
-
-
-
 //появление статистики и набирающеся цифры
-let option = {threshold: [0.5]};
-let observer = new IntersectionObserver(onEntry, option);
-let element = $(".statistics_container");
-element.each((i, el) => {
+function statistics_number () {
+    let option = {threshold: [0.5]};
+    let observer = new IntersectionObserver(onEntry, option);
+    let element = $(".statistics_container");
+    element.each((i, el) => {
     observer.observe(el);
 })
 
@@ -223,15 +218,20 @@ function go_statistics(item, start, end, step) {
             }
     }, 70)
 }
+}
+statistics_number();
 //появление статистики и бегущие цифры
 
+
+//плавный скролл до элемента на странице
 $("a[href^='#']").click(function() {
     let valHref = $(this).attr("href");
     $("html, body").animate({scrollTop: $(valHref).offset().top - $(".header").outerHeight()});
 })
+//плавный скролл до элемента на странице
 
 
-
+// подсвечивание пунктов меню
 $(window).scroll(() => {
     let scrollDistance = $(window).scrollTop();
     $(".section").each((i, el) => {
@@ -252,21 +252,44 @@ $(window).scroll(() => {
             $(".menu li:eq("+ i +")").removeClass("menu_active");
         }
     })
-
-
-    if($(".contacts").offset().top <= scrollDistance + ($(window).height() / 1.1) ) {
-        $(".contacts").css("background", "url(../img/fon_contacts.png) 0 0 / cover no-repeat");
-        $(".contacts").css("opacity", "1"); //дозагрузка фона для секции контакты
-    }
-    
 });
+// подсвечивание пунктов меню
 
-setTimeout(() => {
-    $(".model_window").css("display", "flex");
-}, 3000);
-
-$(".model_window").click(()=> {
-    $(".model_window").css("display", "none");
+// дозагрузка фона для секции контакты
+function change_bg_contacts () {
+    let option = {threshold: [0.2]};
+    let observer = new IntersectionObserver(onEntry, option);
+    let element = $(".contacts_bg");
+    element.each((i, el) => {
+    observer.observe(el);
 })
 
+function onEntry (entry) {
+    entry.forEach(change => {
+        if(change.isIntersecting){
+            change.target.src = change.target.dataset.goodbg;
+        }
+    })
+}
+}
+change_bg_contacts(); 
+// дозагрузка фона для секции контакты
+
+
+
+// появление модального окна
+setTimeout(() => {
+    $("#sale_window").css("display", "flex");
+}, 3000);
+
+$("#sale_window").click(()=> {
+    $("#sale_window").css("display", "none");
+    setTimeout(() => {
+    $("#open_slider").css("display", "flex");
+}, 3000);
+})
+$("#open_slider").click(()=> {
+    $("#open_slider").css("display", "none");
+})
+// появление модального окна
 
