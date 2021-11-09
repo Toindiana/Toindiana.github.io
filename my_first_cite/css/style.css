@@ -728,10 +728,10 @@ input[type="email"] {
   height: 34px;
   padding-left: 13px;
   background: rgba(209, 213, 219, 0.75);
-  font-size: 16.7px;
+  font-size: 17px;
   font-weight: 500;
   letter-spacing: 0;
-  color: #5d5d5e;
+  color: #000;
 }
 .contacts_container textarea {
   width: 100%;
