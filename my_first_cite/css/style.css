@@ -742,7 +742,7 @@ input[type="email"] {
   font-size: 16.7px;
   font-weight: 500;
   letter-spacing: 0;
-  color: #5d5d5e;
+  color: #000;
 }
 .contacts_container input[type="submit"] {
   width: 125px;
