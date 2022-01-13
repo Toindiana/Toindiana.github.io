@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="app/app.js" defer></script>
+  <title>Новости</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper container">
+      <h2 class="logo">Новости</h2>
+      <ul class="country">
+        <li><img class="countery_img" src="img/flags/ru.svg" alt="ru"></li>
+        <li><img class="countery_img" src="img/flags/us.svg" alt="us"></li>
+        <li><img class="countery_img" src="img/flags/de.svg" alt="de"></li>
+      </ul>
+      <form class="searchForm" action="#">
+        <input type="search" name="search" id="search" placeholder="введите любое слово">
+        <button class="btn__search">Найти</button>
+      </form>
+    </div>
+  </header>
+  <div class="progress_bar container">
+    <div class="kub"></div>
+  </div>
+  <ul class="category container">
+    <li class="category__item" data-category="sports">Спорт</li>
+    <li class="category__item" data-category="science">Наука</li>
+    <li class="category__item" data-category="technology">Технологии</li>
+    <li class="category__item" data-category="health">Здоровье</li>
+  </ul>
+  <main class="main container">
+    <!-- <div class="news_item">
+      <h3 class="news_title">Lorem ipsum dolor sit.</h3>
+      <span class="news_desc">${el.description}</span>
+      <a href="#" class="new_link">открыть источник...</a>
+      <img src="img/1.jpeg" alt="news_img" class="news_img">
+    </div> -->
+
+  </main>
+</body>
+
+</html>

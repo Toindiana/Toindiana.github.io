@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+body {
+  background-color: #708090;
+  font-family: "Roboto", sans-serif;
+}
+body * {
+  color: #eeddc4;
+}
+.container {
+  max-width: 1400px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.header {
+  padding: 10px 0;
+}
+.logo {
+  font-size: 50px;
+  cursor: pointer;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.country {
+  display: flex;
+}
+.country li {
+  margin: 0 5px;
+  cursor: pointer;
+}
+.country li img {
+  width: 30px;
+}
+.searchForm * {
+  border: none;
+  outline: none;
+  background-color: #24415e;
+  height: 30px;
+}
+.searchForm:hover {
+  box-shadow: 4px 0 4px #eeddc4;
+}
+.searchForm {
+  display: flex;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+#search {
+  padding: 0 20px;
+  width: 200px;
+  border-radius: 5px 0 0 5px;
+  transition: all 0.3s;
+}
+#search:focus {
+  box-shadow: -4px 0 4px #eeddc4;
+}
+.btn__search {
+  padding: 0 20px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.category {
+  display: flex;
+}
+.category__item {
+  cursor: pointer;
+}
+.category__item:not(:last-child)::after {
+  content: " /";
+  margin: 0 5px;
+  color: #eeddc4;
+}
+.category_active {
+  color: #5ab392;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.news_item {
+  max-width: 44%;
+  margin: 30px 0;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #5a636c;
+  box-shadow: 5px 5px 5px 5px #a6cabd;
+}
+.news_desc {
+  font-weight: 300;
+  margin: 15px 0;
+}
+.new_link {
+  text-align: right;
+  margin: 10px 0;
+  transition: all 0.3s ease-in-out;
+}
+.new_link:hover {
+  color: #bdb9b4;
+}
+.news_img {
+  border-radius: 15px;
+  width: 100%;
+}
+.kub {
+  width: 5px;
+  height: 5px;
+  background-color: coral;
+  opacity: 0;
+}
+
+@media (max-width: 1405px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 760px) {
+  .wrapper {
+    flex-wrap: wrap;
+  }
+  .searchForm {
+    flex-grow: 1;
+    margin: 15px 0;
+  }
+  #search {
+    width: 100%;
+  }
+  .news_item {
+    max-width: none;
+    margin: 20px 10px;
+  }
+}
