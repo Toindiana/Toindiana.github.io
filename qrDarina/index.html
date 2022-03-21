@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cross-Browser QRCode generator for Javascript</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,user-scalable=no"
+    />
+    <!-- <script type="text/javascript" src="jquery.min.js"></script> -->
+    <script type="text/javascript" src="qrcode.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
+  <body>
+    <input
+      id="text"
+      type="text"
+      value="https://введите адрес"
+    /><br />
+    <div class="wrap" id="wrap">
+      <div id="qrcode"></div>
+      <div class="photo"></div>
+    </div>
+
+    <button class="btn">СОЗДАТЬ QRCode</button>
+
+    <script type="text/javascript">
+      var qrcode = new QRCode(document.getElementById("qrcode"), {
+        width: 150,
+        height: 150,
+      });
+
+      function makeCode() {
+        var elText = document.getElementById("text");
+
+        qrcode.makeCode(elText.value);
+      }
+
+
+      const btn = document.querySelector(".btn");
+      const photo = document.querySelector(".photo");
+
+      function randomInteger(min, max) {
+        let rand = min - 0.5 + Math.random() * (max - min + 1);
+        return Math.round(rand);
+      }
+
+      btn.addEventListener("click", () => {
+        
+        let num = randomInteger(1, 8);
+        photo.style.backgroundImage = `url("./img/${num}.jpeg")`;
+        document.getElementById("wrap").style.opacity = "0";
+        setTimeout(() => {
+          document.getElementById("wrap").style.opacity = "1";
+		  makeCode();
+        }, 1010);
+      });
+    </script>
+  </body>
+</html>
